@@ -20,7 +20,7 @@ extension LoginWireframe: LoginWireframeProtocol {
         homeViewController.interactor = HomeInteractor()
         homeViewController.navigation = HomeWireframe()
         homeViewController.navigation?.homeViewController = homeViewController
-        self.welcomeViewController?.present(homeViewController, animated: true, completion: nil)
-        //self.loginViewController?.present(homeViewController, animated: true, completion: nil)
+        let navConroller = UINavigationController(rootViewController: homeViewController)
+        self.welcomeViewController?.present(navConroller, animated: true, completion: nil)
     }
 }
