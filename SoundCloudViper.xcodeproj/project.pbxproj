@@ -10,6 +10,39 @@
 		84EAD8971DAD24F50034B9E2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EAD8961DAD24F50034B9E2 /* AppDelegate.swift */; };
 		84EAD89E1DAD24F50034B9E2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84EAD89D1DAD24F50034B9E2 /* Assets.xcassets */; };
 		84EAD8A11DAD24F50034B9E2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84EAD89F1DAD24F50034B9E2 /* LaunchScreen.storyboard */; };
+		84EAD8C71DAD26F60034B9E2 /* HomeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EAD8BF1DAD26F60034B9E2 /* HomeInteractor.swift */; };
+		84EAD8C81DAD26F60034B9E2 /* HomeInteractorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EAD8C01DAD26F60034B9E2 /* HomeInteractorProtocol.swift */; };
+		84EAD8C91DAD26F60034B9E2 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84EAD8C21DAD26F60034B9E2 /* Home.storyboard */; };
+		84EAD8CA1DAD26F60034B9E2 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EAD8C31DAD26F60034B9E2 /* HomeViewController.swift */; };
+		84EAD8CB1DAD26F60034B9E2 /* HomeWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EAD8C51DAD26F60034B9E2 /* HomeWireframe.swift */; };
+		84EAD8CC1DAD26F60034B9E2 /* HomeWireframeProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EAD8C61DAD26F60034B9E2 /* HomeWireframeProtocol.swift */; };
+		84EAD8D61DAD27090034B9E2 /* PlayerInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EAD8CE1DAD27090034B9E2 /* PlayerInteractor.swift */; };
+		84EAD8D71DAD27090034B9E2 /* PlayerInteractorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EAD8CF1DAD27090034B9E2 /* PlayerInteractorProtocol.swift */; };
+		84EAD8D81DAD27090034B9E2 /* Player.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84EAD8D11DAD27090034B9E2 /* Player.storyboard */; };
+		84EAD8D91DAD27090034B9E2 /* PlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EAD8D21DAD27090034B9E2 /* PlayerViewController.swift */; };
+		84EAD8DA1DAD27090034B9E2 /* PlayerWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EAD8D41DAD27090034B9E2 /* PlayerWireframe.swift */; };
+		84EAD8DB1DAD27090034B9E2 /* PlayerWireframeProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EAD8D51DAD27090034B9E2 /* PlayerWireframeProtocol.swift */; };
+		84EAD8E51DAD27170034B9E2 /* TracksInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EAD8DD1DAD27170034B9E2 /* TracksInteractor.swift */; };
+		84EAD8E61DAD27170034B9E2 /* TracksIntreractorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EAD8DE1DAD27170034B9E2 /* TracksIntreractorProtocol.swift */; };
+		84EAD8E71DAD27170034B9E2 /* Tracks.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84EAD8E01DAD27170034B9E2 /* Tracks.storyboard */; };
+		84EAD8E81DAD27170034B9E2 /* TracksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EAD8E11DAD27170034B9E2 /* TracksViewController.swift */; };
+		84EAD8E91DAD27170034B9E2 /* TracksWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EAD8E31DAD27170034B9E2 /* TracksWireframe.swift */; };
+		84EAD8EA1DAD27170034B9E2 /* TracksWireframeProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EAD8E41DAD27170034B9E2 /* TracksWireframeProtocol.swift */; };
+		84EAD8F41DAD27200034B9E2 /* WelcomeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EAD8EC1DAD27200034B9E2 /* WelcomeInteractor.swift */; };
+		84EAD8F51DAD27200034B9E2 /* WelcomeInteractorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EAD8ED1DAD27200034B9E2 /* WelcomeInteractorProtocol.swift */; };
+		84EAD8F61DAD27200034B9E2 /* Welcome.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84EAD8EF1DAD27200034B9E2 /* Welcome.storyboard */; };
+		84EAD8F71DAD27200034B9E2 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EAD8F01DAD27200034B9E2 /* WelcomeViewController.swift */; };
+		84EAD8F81DAD27200034B9E2 /* WelcomeWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EAD8F21DAD27200034B9E2 /* WelcomeWireframe.swift */; };
+		84EAD8F91DAD27200034B9E2 /* WelcomeWireframeProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EAD8F31DAD27200034B9E2 /* WelcomeWireframeProtocol.swift */; };
+		84EAD9051DAD272C0034B9E2 /* LoginInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EAD8FB1DAD272C0034B9E2 /* LoginInteractor.swift */; };
+		84EAD9061DAD272C0034B9E2 /* LoginInteractorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EAD8FC1DAD272C0034B9E2 /* LoginInteractorProtocol.swift */; };
+		84EAD9071DAD272C0034B9E2 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84EAD8FE1DAD272C0034B9E2 /* Login.storyboard */; };
+		84EAD9081DAD272C0034B9E2 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EAD8FF1DAD272C0034B9E2 /* LoginViewController.swift */; };
+		84EAD9091DAD272C0034B9E2 /* SoundCloudAuthenticator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EAD9011DAD272C0034B9E2 /* SoundCloudAuthenticator.swift */; };
+		84EAD90A1DAD272C0034B9E2 /* LoginWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EAD9031DAD272C0034B9E2 /* LoginWireframe.swift */; };
+		84EAD90B1DAD272C0034B9E2 /* LoginWireframeProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EAD9041DAD272C0034B9E2 /* LoginWireframeProtocol.swift */; };
+		84EAD90D1DAD27880034B9E2 /* RootWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EAD90C1DAD27870034B9E2 /* RootWireframe.swift */; };
+		84EAD9101DAD27FB0034B9E2 /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 84EAD90F1DAD27FB0034B9E2 /* logo.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -18,6 +51,39 @@
 		84EAD89D1DAD24F50034B9E2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		84EAD8A01DAD24F50034B9E2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		84EAD8A21DAD24F50034B9E2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84EAD8BF1DAD26F60034B9E2 /* HomeInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeInteractor.swift; sourceTree = "<group>"; };
+		84EAD8C01DAD26F60034B9E2 /* HomeInteractorProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeInteractorProtocol.swift; sourceTree = "<group>"; };
+		84EAD8C21DAD26F60034B9E2 /* Home.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
+		84EAD8C31DAD26F60034B9E2 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		84EAD8C51DAD26F60034B9E2 /* HomeWireframe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeWireframe.swift; sourceTree = "<group>"; };
+		84EAD8C61DAD26F60034B9E2 /* HomeWireframeProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeWireframeProtocol.swift; sourceTree = "<group>"; };
+		84EAD8CE1DAD27090034B9E2 /* PlayerInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerInteractor.swift; sourceTree = "<group>"; };
+		84EAD8CF1DAD27090034B9E2 /* PlayerInteractorProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerInteractorProtocol.swift; sourceTree = "<group>"; };
+		84EAD8D11DAD27090034B9E2 /* Player.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Player.storyboard; sourceTree = "<group>"; };
+		84EAD8D21DAD27090034B9E2 /* PlayerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerViewController.swift; sourceTree = "<group>"; };
+		84EAD8D41DAD27090034B9E2 /* PlayerWireframe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerWireframe.swift; sourceTree = "<group>"; };
+		84EAD8D51DAD27090034B9E2 /* PlayerWireframeProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerWireframeProtocol.swift; sourceTree = "<group>"; };
+		84EAD8DD1DAD27170034B9E2 /* TracksInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TracksInteractor.swift; sourceTree = "<group>"; };
+		84EAD8DE1DAD27170034B9E2 /* TracksIntreractorProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TracksIntreractorProtocol.swift; sourceTree = "<group>"; };
+		84EAD8E01DAD27170034B9E2 /* Tracks.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Tracks.storyboard; sourceTree = "<group>"; };
+		84EAD8E11DAD27170034B9E2 /* TracksViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TracksViewController.swift; sourceTree = "<group>"; };
+		84EAD8E31DAD27170034B9E2 /* TracksWireframe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TracksWireframe.swift; sourceTree = "<group>"; };
+		84EAD8E41DAD27170034B9E2 /* TracksWireframeProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TracksWireframeProtocol.swift; sourceTree = "<group>"; };
+		84EAD8EC1DAD27200034B9E2 /* WelcomeInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeInteractor.swift; sourceTree = "<group>"; };
+		84EAD8ED1DAD27200034B9E2 /* WelcomeInteractorProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeInteractorProtocol.swift; sourceTree = "<group>"; };
+		84EAD8EF1DAD27200034B9E2 /* Welcome.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Welcome.storyboard; sourceTree = "<group>"; };
+		84EAD8F01DAD27200034B9E2 /* WelcomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+		84EAD8F21DAD27200034B9E2 /* WelcomeWireframe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeWireframe.swift; sourceTree = "<group>"; };
+		84EAD8F31DAD27200034B9E2 /* WelcomeWireframeProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeWireframeProtocol.swift; sourceTree = "<group>"; };
+		84EAD8FB1DAD272C0034B9E2 /* LoginInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginInteractor.swift; sourceTree = "<group>"; };
+		84EAD8FC1DAD272C0034B9E2 /* LoginInteractorProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginInteractorProtocol.swift; sourceTree = "<group>"; };
+		84EAD8FE1DAD272C0034B9E2 /* Login.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
+		84EAD8FF1DAD272C0034B9E2 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		84EAD9011DAD272C0034B9E2 /* SoundCloudAuthenticator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SoundCloudAuthenticator.swift; sourceTree = "<group>"; };
+		84EAD9031DAD272C0034B9E2 /* LoginWireframe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginWireframe.swift; sourceTree = "<group>"; };
+		84EAD9041DAD272C0034B9E2 /* LoginWireframeProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginWireframeProtocol.swift; sourceTree = "<group>"; };
+		84EAD90C1DAD27870034B9E2 /* RootWireframe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootWireframe.swift; sourceTree = "<group>"; };
+		84EAD90F1DAD27FB0034B9E2 /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,12 +116,229 @@
 		84EAD8951DAD24F50034B9E2 /* SoundCloudViper */ = {
 			isa = PBXGroup;
 			children = (
+				84EAD90E1DAD27FB0034B9E2 /* Image */,
+				84EAD8A91DAD25640034B9E2 /* Module */,
 				84EAD8961DAD24F50034B9E2 /* AppDelegate.swift */,
+				84EAD90C1DAD27870034B9E2 /* RootWireframe.swift */,
 				84EAD89D1DAD24F50034B9E2 /* Assets.xcassets */,
 				84EAD89F1DAD24F50034B9E2 /* LaunchScreen.storyboard */,
 				84EAD8A21DAD24F50034B9E2 /* Info.plist */,
 			);
 			path = SoundCloudViper;
+			sourceTree = "<group>";
+		};
+		84EAD8A91DAD25640034B9E2 /* Module */ = {
+			isa = PBXGroup;
+			children = (
+				84EAD8AA1DAD25A10034B9E2 /* Home */,
+				84EAD8AB1DAD25A10034B9E2 /* Player */,
+				84EAD8AC1DAD25A10034B9E2 /* Tracks */,
+				84EAD8AD1DAD25A10034B9E2 /* Welcome */,
+				84EAD8AE1DAD25A10034B9E2 /* Login */,
+			);
+			path = Module;
+			sourceTree = "<group>";
+		};
+		84EAD8AA1DAD25A10034B9E2 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				84EAD8BE1DAD26F60034B9E2 /* Interactor */,
+				84EAD8C11DAD26F60034B9E2 /* Presenter */,
+				84EAD8C41DAD26F60034B9E2 /* Wireframe */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		84EAD8AB1DAD25A10034B9E2 /* Player */ = {
+			isa = PBXGroup;
+			children = (
+				84EAD8CD1DAD27090034B9E2 /* Interactor */,
+				84EAD8D01DAD27090034B9E2 /* Presenter */,
+				84EAD8D31DAD27090034B9E2 /* Wireframe */,
+			);
+			path = Player;
+			sourceTree = "<group>";
+		};
+		84EAD8AC1DAD25A10034B9E2 /* Tracks */ = {
+			isa = PBXGroup;
+			children = (
+				84EAD8DC1DAD27170034B9E2 /* Interactor */,
+				84EAD8DF1DAD27170034B9E2 /* Presenter */,
+				84EAD8E21DAD27170034B9E2 /* Wireframe */,
+			);
+			path = Tracks;
+			sourceTree = "<group>";
+		};
+		84EAD8AD1DAD25A10034B9E2 /* Welcome */ = {
+			isa = PBXGroup;
+			children = (
+				84EAD8EB1DAD27200034B9E2 /* Interactor */,
+				84EAD8EE1DAD27200034B9E2 /* Presenter */,
+				84EAD8F11DAD27200034B9E2 /* Wireframe */,
+			);
+			path = Welcome;
+			sourceTree = "<group>";
+		};
+		84EAD8AE1DAD25A10034B9E2 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				84EAD8FA1DAD272C0034B9E2 /* Interactor */,
+				84EAD8FD1DAD272C0034B9E2 /* Presenter */,
+				84EAD9001DAD272C0034B9E2 /* Services */,
+				84EAD9021DAD272C0034B9E2 /* Wireframe */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		84EAD8BE1DAD26F60034B9E2 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				84EAD8BF1DAD26F60034B9E2 /* HomeInteractor.swift */,
+				84EAD8C01DAD26F60034B9E2 /* HomeInteractorProtocol.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		84EAD8C11DAD26F60034B9E2 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				84EAD8C21DAD26F60034B9E2 /* Home.storyboard */,
+				84EAD8C31DAD26F60034B9E2 /* HomeViewController.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		84EAD8C41DAD26F60034B9E2 /* Wireframe */ = {
+			isa = PBXGroup;
+			children = (
+				84EAD8C51DAD26F60034B9E2 /* HomeWireframe.swift */,
+				84EAD8C61DAD26F60034B9E2 /* HomeWireframeProtocol.swift */,
+			);
+			path = Wireframe;
+			sourceTree = "<group>";
+		};
+		84EAD8CD1DAD27090034B9E2 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				84EAD8CE1DAD27090034B9E2 /* PlayerInteractor.swift */,
+				84EAD8CF1DAD27090034B9E2 /* PlayerInteractorProtocol.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		84EAD8D01DAD27090034B9E2 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				84EAD8D11DAD27090034B9E2 /* Player.storyboard */,
+				84EAD8D21DAD27090034B9E2 /* PlayerViewController.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		84EAD8D31DAD27090034B9E2 /* Wireframe */ = {
+			isa = PBXGroup;
+			children = (
+				84EAD8D41DAD27090034B9E2 /* PlayerWireframe.swift */,
+				84EAD8D51DAD27090034B9E2 /* PlayerWireframeProtocol.swift */,
+			);
+			path = Wireframe;
+			sourceTree = "<group>";
+		};
+		84EAD8DC1DAD27170034B9E2 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				84EAD8DD1DAD27170034B9E2 /* TracksInteractor.swift */,
+				84EAD8DE1DAD27170034B9E2 /* TracksIntreractorProtocol.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		84EAD8DF1DAD27170034B9E2 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				84EAD8E01DAD27170034B9E2 /* Tracks.storyboard */,
+				84EAD8E11DAD27170034B9E2 /* TracksViewController.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		84EAD8E21DAD27170034B9E2 /* Wireframe */ = {
+			isa = PBXGroup;
+			children = (
+				84EAD8E31DAD27170034B9E2 /* TracksWireframe.swift */,
+				84EAD8E41DAD27170034B9E2 /* TracksWireframeProtocol.swift */,
+			);
+			path = Wireframe;
+			sourceTree = "<group>";
+		};
+		84EAD8EB1DAD27200034B9E2 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				84EAD8EC1DAD27200034B9E2 /* WelcomeInteractor.swift */,
+				84EAD8ED1DAD27200034B9E2 /* WelcomeInteractorProtocol.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		84EAD8EE1DAD27200034B9E2 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				84EAD8EF1DAD27200034B9E2 /* Welcome.storyboard */,
+				84EAD8F01DAD27200034B9E2 /* WelcomeViewController.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		84EAD8F11DAD27200034B9E2 /* Wireframe */ = {
+			isa = PBXGroup;
+			children = (
+				84EAD8F21DAD27200034B9E2 /* WelcomeWireframe.swift */,
+				84EAD8F31DAD27200034B9E2 /* WelcomeWireframeProtocol.swift */,
+			);
+			path = Wireframe;
+			sourceTree = "<group>";
+		};
+		84EAD8FA1DAD272C0034B9E2 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				84EAD8FB1DAD272C0034B9E2 /* LoginInteractor.swift */,
+				84EAD8FC1DAD272C0034B9E2 /* LoginInteractorProtocol.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		84EAD8FD1DAD272C0034B9E2 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				84EAD8FE1DAD272C0034B9E2 /* Login.storyboard */,
+				84EAD8FF1DAD272C0034B9E2 /* LoginViewController.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		84EAD9001DAD272C0034B9E2 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				84EAD9011DAD272C0034B9E2 /* SoundCloudAuthenticator.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		84EAD9021DAD272C0034B9E2 /* Wireframe */ = {
+			isa = PBXGroup;
+			children = (
+				84EAD9031DAD272C0034B9E2 /* LoginWireframe.swift */,
+				84EAD9041DAD272C0034B9E2 /* LoginWireframeProtocol.swift */,
+			);
+			path = Wireframe;
+			sourceTree = "<group>";
+		};
+		84EAD90E1DAD27FB0034B9E2 /* Image */ = {
+			isa = PBXGroup;
+			children = (
+				84EAD90F1DAD27FB0034B9E2 /* logo.png */,
+			);
+			path = Image;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -117,8 +400,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84EAD8C91DAD26F60034B9E2 /* Home.storyboard in Resources */,
+				84EAD8D81DAD27090034B9E2 /* Player.storyboard in Resources */,
+				84EAD9071DAD272C0034B9E2 /* Login.storyboard in Resources */,
 				84EAD8A11DAD24F50034B9E2 /* LaunchScreen.storyboard in Resources */,
+				84EAD9101DAD27FB0034B9E2 /* logo.png in Resources */,
+				84EAD8E71DAD27170034B9E2 /* Tracks.storyboard in Resources */,
 				84EAD89E1DAD24F50034B9E2 /* Assets.xcassets in Resources */,
+				84EAD8F61DAD27200034B9E2 /* Welcome.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -129,7 +418,34 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84EAD8D61DAD27090034B9E2 /* PlayerInteractor.swift in Sources */,
+				84EAD8F51DAD27200034B9E2 /* WelcomeInteractorProtocol.swift in Sources */,
+				84EAD8E91DAD27170034B9E2 /* TracksWireframe.swift in Sources */,
+				84EAD8E61DAD27170034B9E2 /* TracksIntreractorProtocol.swift in Sources */,
 				84EAD8971DAD24F50034B9E2 /* AppDelegate.swift in Sources */,
+				84EAD8EA1DAD27170034B9E2 /* TracksWireframeProtocol.swift in Sources */,
+				84EAD8F91DAD27200034B9E2 /* WelcomeWireframeProtocol.swift in Sources */,
+				84EAD8C81DAD26F60034B9E2 /* HomeInteractorProtocol.swift in Sources */,
+				84EAD9091DAD272C0034B9E2 /* SoundCloudAuthenticator.swift in Sources */,
+				84EAD8E81DAD27170034B9E2 /* TracksViewController.swift in Sources */,
+				84EAD8F41DAD27200034B9E2 /* WelcomeInteractor.swift in Sources */,
+				84EAD8D71DAD27090034B9E2 /* PlayerInteractorProtocol.swift in Sources */,
+				84EAD90A1DAD272C0034B9E2 /* LoginWireframe.swift in Sources */,
+				84EAD8C71DAD26F60034B9E2 /* HomeInteractor.swift in Sources */,
+				84EAD9081DAD272C0034B9E2 /* LoginViewController.swift in Sources */,
+				84EAD9051DAD272C0034B9E2 /* LoginInteractor.swift in Sources */,
+				84EAD90D1DAD27880034B9E2 /* RootWireframe.swift in Sources */,
+				84EAD8F81DAD27200034B9E2 /* WelcomeWireframe.swift in Sources */,
+				84EAD8D91DAD27090034B9E2 /* PlayerViewController.swift in Sources */,
+				84EAD8CB1DAD26F60034B9E2 /* HomeWireframe.swift in Sources */,
+				84EAD8CA1DAD26F60034B9E2 /* HomeViewController.swift in Sources */,
+				84EAD8E51DAD27170034B9E2 /* TracksInteractor.swift in Sources */,
+				84EAD8CC1DAD26F60034B9E2 /* HomeWireframeProtocol.swift in Sources */,
+				84EAD90B1DAD272C0034B9E2 /* LoginWireframeProtocol.swift in Sources */,
+				84EAD8DA1DAD27090034B9E2 /* PlayerWireframe.swift in Sources */,
+				84EAD8DB1DAD27090034B9E2 /* PlayerWireframeProtocol.swift in Sources */,
+				84EAD8F71DAD27200034B9E2 /* WelcomeViewController.swift in Sources */,
+				84EAD9061DAD272C0034B9E2 /* LoginInteractorProtocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

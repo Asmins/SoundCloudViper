@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16B2327e" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Login View Controller-->
+        <scene sceneID="q9m-RY-FQw">
+            <objects>
+                <viewController storyboardIdentifier="LoginViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="602-iJ-C66" customClass="LoginViewController" customModule="SoundCloudViper" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="CTJ-AU-RuJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="JJT-l3-9lU"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Lz2-h0-Uvx">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ywP-zZ-Wh3">
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <outlet property="delegate" destination="602-iJ-C66" id="VxV-g2-4hP"/>
+                                </connections>
+                            </webView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="cRD-H7-kyk">
+                                <frame key="frameInset" minX="177" minY="323" width="20" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="color" red="1" green="0.46733601699999999" blue="0.05952738531" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ywP-zZ-Wh3" firstAttribute="leading" secondItem="Lz2-h0-Uvx" secondAttribute="leading" id="4D5-jo-gra"/>
+                            <constraint firstAttribute="trailing" secondItem="ywP-zZ-Wh3" secondAttribute="trailing" id="LVI-NR-vOC"/>
+                            <constraint firstItem="ywP-zZ-Wh3" firstAttribute="top" secondItem="CTJ-AU-RuJ" secondAttribute="bottom" id="LY1-W8-hKm"/>
+                            <constraint firstItem="JJT-l3-9lU" firstAttribute="top" secondItem="ywP-zZ-Wh3" secondAttribute="bottom" id="b5b-cr-p6T"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="activityIndicator" destination="cRD-H7-kyk" id="6k4-Kf-pss"/>
+                        <outlet property="webViewForLogin" destination="ywP-zZ-Wh3" id="zLV-P8-YYT"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="swS-f6-ht7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="98" y="152"/>
+        </scene>
+    </scenes>
+</document>
