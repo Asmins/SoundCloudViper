@@ -26,6 +26,9 @@ class WelcomeViewController: UIViewController {
     @IBAction func signInButton(_ sender: AnyObject) {
         self.navigation.showLoginView()
     }
-
+    
+    override var prefersStatusBarHidden: Bool {
+        return true
+    }
     
 }

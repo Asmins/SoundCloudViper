@@ -9,5 +9,23 @@
 import UIKit
 
 class HomeInteractor {
+   var service = RequestService()
+}
+
+extension HomeInteractor: GetDataAboutUser {
     
+    func getData(tableView:UITableView){
+        service.requestMe(tableView: tableView)
+    }
+    
+    func setupHeader(header: HeaderTableViewCell) {
+        if service.user.followersCount != nil {
+            header.labelForUserName.text = service.user.fullName
+            header.labelForUserNickName.text = service.user.nickName
+            header.countFollowersLabel.text = "\(service.user.followersCount! as Int)"
+            header.countFollowingLabel.text = "\(service.user.followingCount! as Int)"
+            let url = NSURL(string:(service.user.url)!)
+            header.imageViewForUser.sd_setImage(with: url as URL!)
+        }
+    }
 }

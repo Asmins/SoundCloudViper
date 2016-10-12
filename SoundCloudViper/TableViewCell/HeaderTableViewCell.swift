@@ -17,6 +17,10 @@ class HeaderTableViewCell: UITableViewHeaderFooterView {
     @IBOutlet var imageViewForUser: UIImageView!
     override func awakeFromNib() {
         super.awakeFromNib()
+       // imageViewForUser.layer.cornerRadius = imageViewForUser.frame.size.height / 2
+        imageViewForUser.clipsToBounds = true
+        imageViewForUser.layer.masksToBounds = true
+        imageViewForUser.layoutIfNeeded()
         // Initialization code
     }
 

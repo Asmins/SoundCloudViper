@@ -36,7 +36,6 @@ extension LoginViewController: UIWebViewDelegate {
     }
     
     func webView(_ webView: UIWebView, shouldStartLoadWith request: URLRequest, navigationType: UIWebViewNavigationType) -> Bool {
-        
         return self.interactor.webView(webViewForLogin, shouldStartLoadWith: request, navigationType: navigationType, viewController: self)
     }
 }

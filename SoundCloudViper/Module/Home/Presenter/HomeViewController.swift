@@ -7,18 +7,20 @@
 //
 
 import UIKit
+import SDWebImage
 
 class HomeViewController: UIViewController {
-
+    
     @IBOutlet var tableVIew: UITableView!
     var navigation: HomeWireframe?
     var interactor: HomeInteractor?
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.title = "FEED"
         self.navigationController?.navigationBar.barTintColor = UIColor(colorLiteralRed: 255/255, green: 116/255, blue: 0/255, alpha: 1)
         self.setupTableView(tableView: tableVIew)
-        self.title = "FEED"
+        self.interactor?.getData(tableView: tableVIew)
         // Do any additional setup after loading the view.
     }
 }
@@ -39,6 +41,7 @@ extension HomeViewController: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         let header = tableView.dequeueReusableHeaderFooterView(withIdentifier: "Header") as! HeaderTableViewCell
+        self.interactor?.setupHeader(header: header)
         return header
     }
     

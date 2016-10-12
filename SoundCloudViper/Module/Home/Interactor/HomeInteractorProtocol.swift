@@ -6,4 +6,9 @@
 //  Copyright © 2016 Mozi. All rights reserved.
 //
 
-import Foundation
+import UIKit
+
+protocol GetDataAboutUser {
+    func getData(tableView:UITableView)
+    func setupHeader(header:HeaderTableViewCell)
+}
