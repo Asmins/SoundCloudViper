@@ -10,6 +10,7 @@ import UIKit
 
 class ActivityTableViewCell: UITableViewCell {
 
+    @IBOutlet var view: UIView!
     @IBOutlet var durationLabel: UILabel!
     @IBOutlet var countTracksLabel: UILabel!
     @IBOutlet var subTitleLabel: UILabel!
@@ -17,9 +18,14 @@ class ActivityTableViewCell: UITableViewCell {
     @IBOutlet var mainImageView: UIImageView!
     @IBOutlet var activityLabel: UILabel!
     @IBOutlet var imageViewForUser: UIImageView!
+    
+    var idPlayList:Int!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+        imageViewForUser.clipsToBounds = true
+        imageViewForUser.layer.masksToBounds = true
+        imageViewForUser.layoutIfNeeded()
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {

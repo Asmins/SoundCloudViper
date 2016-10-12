@@ -11,4 +11,5 @@ import UIKit
 protocol GetDataAboutUser {
     func getData(tableView:UITableView,activityIndecator:UIActivityIndicatorView)
     func setupHeader(header:HeaderTableViewCell)
+    func setupCell(cell:ActivityTableViewCell,indexPath:NSIndexPath)
 }

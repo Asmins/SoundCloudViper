@@ -9,7 +9,8 @@
 import UIKit
 
 class HomeInteractor {
-   var service = RequestService()
+    var arrayActivity:[Activity]?
+    var service = RequestService()
 }
 
 extension HomeInteractor: GetDataAboutUser {
@@ -28,5 +29,24 @@ extension HomeInteractor: GetDataAboutUser {
             let url = NSURL(string:(service.user.url)!)
             header.imageViewForUser.sd_setImage(with: url as URL!)
         }
+    }
+    
+    func setupCell(cell: ActivityTableViewCell, indexPath: NSIndexPath) {
+        cell.activityLabel.text = "\(service.arrayActivity[indexPath.row].userName! as String) posted a new \(service.arrayActivity[indexPath.row].type! as String)"
+        cell.durationLabel.text = service.arrayActivity[indexPath.row].duration
+        cell.titleLabel.text = service.arrayActivity[indexPath.row].userName
+        cell.subTitleLabel.text = service.arrayActivity[indexPath.row].title
+        
+        if service.arrayActivity[indexPath.row].trackCount != 0 {
+            cell.view.isHidden = false
+            cell.idPlayList = service.arrayActivity[indexPath.row].idPlaylist
+            cell.countTracksLabel.text = "\(service.arrayActivity[indexPath.row].trackCount! as Int)"
+        }else{
+            cell.view.isHidden = true
+            cell.countTracksLabel.text = ""
+        }
+        let url = NSURL(string: service.arrayActivity[indexPath.row].urlUser!)
+        cell.mainImageView.sd_setImage(with: url as URL!)
+        cell.imageViewForUser.sd_setImage(with: url as URL!)
     }
 }

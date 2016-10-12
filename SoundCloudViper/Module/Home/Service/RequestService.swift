@@ -41,6 +41,7 @@ class RequestService {
             if response.data != nil {
                 self.parsDataActivity(data: response.data!, activityIndecator: activityIndicator)
             }
+            tableView.reloadData()
             activityIndicator.stopAnimating()
         }
     }

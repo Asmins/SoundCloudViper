@@ -30,11 +30,12 @@ class HomeViewController: UIViewController {
 extension HomeViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "ActivityCell") as! ActivityTableViewCell
+        self.interactor?.setupCell(cell: cell, indexPath: indexPath as NSIndexPath)
         return cell
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 1
+        return (self.interactor?.service.arrayActivity.count)!
     }
     
 }
