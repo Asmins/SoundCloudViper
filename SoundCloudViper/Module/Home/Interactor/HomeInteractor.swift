@@ -14,8 +14,9 @@ class HomeInteractor {
 
 extension HomeInteractor: GetDataAboutUser {
     
-    func getData(tableView:UITableView){
+    func getData(tableView:UITableView,activityIndecator:UIActivityIndicatorView){
         service.requestMe(tableView: tableView)
+        service.getDataAboutActivity(tableView: tableView, activityIndicator: activityIndecator)
     }
     
     func setupHeader(header: HeaderTableViewCell) {

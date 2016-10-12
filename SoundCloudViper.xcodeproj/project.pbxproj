@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		84C77C591DAE2C8300D0C3B3 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C77C581DAE2C8300D0C3B3 /* User.swift */; };
+		84C77C5B1DAE39EF00D0C3B3 /* Activity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C77C5A1DAE39EE00D0C3B3 /* Activity.swift */; };
 		84EAD8971DAD24F50034B9E2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EAD8961DAD24F50034B9E2 /* AppDelegate.swift */; };
 		84EAD89E1DAD24F50034B9E2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84EAD89D1DAD24F50034B9E2 /* Assets.xcassets */; };
 		84EAD8A11DAD24F50034B9E2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84EAD89F1DAD24F50034B9E2 /* LaunchScreen.storyboard */; };
@@ -54,6 +55,7 @@
 
 /* Begin PBXFileReference section */
 		84C77C581DAE2C8300D0C3B3 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		84C77C5A1DAE39EE00D0C3B3 /* Activity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Activity.swift; sourceTree = "<group>"; };
 		84EAD8931DAD24F50034B9E2 /* SoundCloudViper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SoundCloudViper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84EAD8961DAD24F50034B9E2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		84EAD89D1DAD24F50034B9E2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -118,6 +120,7 @@
 			isa = PBXGroup;
 			children = (
 				84C77C581DAE2C8300D0C3B3 /* User.swift */,
+				84C77C5A1DAE39EE00D0C3B3 /* Activity.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -546,6 +549,7 @@
 				84EAD8971DAD24F50034B9E2 /* AppDelegate.swift in Sources */,
 				84EAD8EA1DAD27170034B9E2 /* TracksWireframeProtocol.swift in Sources */,
 				84EAD8F91DAD27200034B9E2 /* WelcomeWireframeProtocol.swift in Sources */,
+				84C77C5B1DAE39EF00D0C3B3 /* Activity.swift in Sources */,
 				84EAD8C81DAD26F60034B9E2 /* HomeInteractorProtocol.swift in Sources */,
 				84EAD9091DAD272C0034B9E2 /* SoundCloudAuthenticator.swift in Sources */,
 				84EAD8E81DAD27170034B9E2 /* TracksViewController.swift in Sources */,

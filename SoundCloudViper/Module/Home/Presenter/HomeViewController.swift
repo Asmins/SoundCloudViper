@@ -12,15 +12,17 @@ import SDWebImage
 class HomeViewController: UIViewController {
     
     @IBOutlet var tableVIew: UITableView!
+    @IBOutlet var activityIndicator: UIActivityIndicatorView!
     var navigation: HomeWireframe?
     var interactor: HomeInteractor?
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        activityIndicator.startAnimating()
         self.title = "FEED"
         self.navigationController?.navigationBar.barTintColor = UIColor(colorLiteralRed: 255/255, green: 116/255, blue: 0/255, alpha: 1)
         self.setupTableView(tableView: tableVIew)
-        self.interactor?.getData(tableView: tableVIew)
+        self.interactor?.getData(tableView: tableVIew,activityIndecator:activityIndicator)
         // Do any additional setup after loading the view.
     }
 }

@@ -25,17 +25,23 @@
                                     <outlet property="delegate" destination="nrd-he-Mas" id="CtR-e2-jVt"/>
                                 </connections>
                             </tableView>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="rcJ-PR-G7d">
+                                <color key="color" red="1" green="0.46733601699999999" blue="0.05952738531" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="Dmh-mx-8Es" secondAttribute="trailing" id="CUX-ZV-dTS"/>
                             <constraint firstItem="EKs-87-YNZ" firstAttribute="top" secondItem="Dmh-mx-8Es" secondAttribute="bottom" id="Qke-TC-qKy"/>
                             <constraint firstItem="Dmh-mx-8Es" firstAttribute="top" secondItem="H7c-mG-gfa" secondAttribute="bottom" constant="-64" id="UQd-Vf-PCi"/>
+                            <constraint firstItem="rcJ-PR-G7d" firstAttribute="centerX" secondItem="IBy-3x-ZtX" secondAttribute="centerX" id="VUe-Lu-KfQ"/>
                             <constraint firstItem="Dmh-mx-8Es" firstAttribute="leading" secondItem="IBy-3x-ZtX" secondAttribute="leading" id="iUM-nh-Xd3"/>
+                            <constraint firstItem="rcJ-PR-G7d" firstAttribute="centerY" secondItem="IBy-3x-ZtX" secondAttribute="centerY" id="m2V-0Q-MN5"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="LSG-Vm-e2I"/>
                     <connections>
+                        <outlet property="activityIndicator" destination="rcJ-PR-G7d" id="epN-gk-SQv"/>
                         <outlet property="tableVIew" destination="Dmh-mx-8Es" id="Kg7-Za-AUH"/>
                     </connections>
                 </viewController>
