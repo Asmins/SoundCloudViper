@@ -6,7 +6,7 @@
 //  Copyright © 2016 Mozi. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 class HomeWireframe {
     var homeViewController:HomeViewController?
@@ -14,9 +14,14 @@ class HomeWireframe {
 
 extension HomeWireframe: HomeWireframeProtocol {
    
-    func showTrackViewController() {
-        print("Show tracks view controller")
+    func showTrackViewController(title: String, id: Int) {
+       let controller = UIStoryboard.init(name: "Tracks", bundle: nil).instantiateViewController(withIdentifier: "TracksViewController") as! TracksViewController
+        controller.title = title
+        controller.id = id
+        controller.interactor = TracksInteractor()
+        homeViewController?.navigationController?.pushViewController(controller, animated: true)
     }
+    
     func showPlayerViewController() {
         print("Show player view controller")
     }

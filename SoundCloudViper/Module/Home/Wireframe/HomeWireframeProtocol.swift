@@ -9,6 +9,6 @@
 import Foundation
 
 protocol HomeWireframeProtocol {
-    func showTrackViewController()
+    func showTrackViewController(title:String,id:Int)
     func showPlayerViewController()
 }

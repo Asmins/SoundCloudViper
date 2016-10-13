@@ -9,7 +9,6 @@
 import UIKit
 
 class HomeInteractor {
-    var arrayActivity:[Activity]?
     var service = RequestService()
 }
 
@@ -49,4 +48,5 @@ extension HomeInteractor: GetDataAboutUser {
         cell.mainImageView.sd_setImage(with: url as URL!)
         cell.imageViewForUser.sd_setImage(with: url as URL!)
     }
+    
 }

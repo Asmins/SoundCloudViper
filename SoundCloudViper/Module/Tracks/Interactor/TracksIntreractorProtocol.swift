@@ -6,4 +6,9 @@
 //  Copyright © 2016 Mozi. All rights reserved.
 //
 
-import Foundation
+import UIKit
+
+protocol TracksInteractorProtocol {
+    func getTrackInfo(id:Int,tableView:UITableView)
+    func setupCell(cell:TrackTableViewCell,indexPath:NSIndexPath)
+}

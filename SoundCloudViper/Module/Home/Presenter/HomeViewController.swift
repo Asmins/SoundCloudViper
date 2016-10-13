@@ -37,7 +37,7 @@ extension HomeViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return (self.interactor?.service.arrayActivity.count)!
     }
-    
+
 }
 
 extension HomeViewController: UITableViewDelegate {
@@ -54,6 +54,24 @@ extension HomeViewController: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return CGFloat(200)
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let cell = tableView.cellForRow(at: indexPath) as! ActivityTableViewCell
+        
+        switch self.interactor!.service.arrayActivity[indexPath.row].type! as String {
+        case "playlist":
+            self.navigation!.showTrackViewController(title: cell.subTitleLabel.text!, id: cell.idPlayList)
+        case "playlist-repost":
+            self.navigation!.showTrackViewController(title: cell.subTitleLabel.text!, id: cell.idPlayList)
+        case "track":
+            self.navigation?.showPlayerViewController()
+        case "track-repost":
+            self.navigation?.showPlayerViewController()
+        default:
+            print("Error")
+        }
+        tableView.deselectRow(at: indexPath, animated: true)
     }
 }
 

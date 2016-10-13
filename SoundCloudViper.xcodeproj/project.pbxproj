@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		84C77C591DAE2C8300D0C3B3 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C77C581DAE2C8300D0C3B3 /* User.swift */; };
 		84C77C5B1DAE39EF00D0C3B3 /* Activity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C77C5A1DAE39EE00D0C3B3 /* Activity.swift */; };
+		84C77C7B1DAE784C00D0C3B3 /* TrackTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84C77C7A1DAE784C00D0C3B3 /* TrackTableViewCell.xib */; };
+		84C77C7D1DAE789200D0C3B3 /* TrackTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C77C7C1DAE789200D0C3B3 /* TrackTableViewCell.swift */; };
+		84C77C801DAE7A7400D0C3B3 /* TrackService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C77C7F1DAE7A7400D0C3B3 /* TrackService.swift */; };
+		84C77C821DAE7DE900D0C3B3 /* Track.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C77C811DAE7DE900D0C3B3 /* Track.swift */; };
 		84EAD8971DAD24F50034B9E2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EAD8961DAD24F50034B9E2 /* AppDelegate.swift */; };
 		84EAD89E1DAD24F50034B9E2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84EAD89D1DAD24F50034B9E2 /* Assets.xcassets */; };
 		84EAD8A11DAD24F50034B9E2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84EAD89F1DAD24F50034B9E2 /* LaunchScreen.storyboard */; };
@@ -56,6 +60,10 @@
 /* Begin PBXFileReference section */
 		84C77C581DAE2C8300D0C3B3 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		84C77C5A1DAE39EE00D0C3B3 /* Activity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Activity.swift; sourceTree = "<group>"; };
+		84C77C7A1DAE784C00D0C3B3 /* TrackTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TrackTableViewCell.xib; sourceTree = "<group>"; };
+		84C77C7C1DAE789200D0C3B3 /* TrackTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrackTableViewCell.swift; sourceTree = "<group>"; };
+		84C77C7F1DAE7A7400D0C3B3 /* TrackService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrackService.swift; sourceTree = "<group>"; };
+		84C77C811DAE7DE900D0C3B3 /* Track.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Track.swift; sourceTree = "<group>"; };
 		84EAD8931DAD24F50034B9E2 /* SoundCloudViper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SoundCloudViper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84EAD8961DAD24F50034B9E2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		84EAD89D1DAD24F50034B9E2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -121,8 +129,17 @@
 			children = (
 				84C77C581DAE2C8300D0C3B3 /* User.swift */,
 				84C77C5A1DAE39EE00D0C3B3 /* Activity.swift */,
+				84C77C811DAE7DE900D0C3B3 /* Track.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		84C77C7E1DAE7A5200D0C3B3 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				84C77C7F1DAE7A7400D0C3B3 /* TrackService.swift */,
+			);
+			path = Service;
 			sourceTree = "<group>";
 		};
 		84EAD88A1DAD24F50034B9E2 = {
@@ -195,6 +212,7 @@
 		84EAD8AC1DAD25A10034B9E2 /* Tracks */ = {
 			isa = PBXGroup;
 			children = (
+				84C77C7E1DAE7A5200D0C3B3 /* Service */,
 				84EAD8DC1DAD27170034B9E2 /* Interactor */,
 				84EAD8DF1DAD27170034B9E2 /* Presenter */,
 				84EAD8E21DAD27170034B9E2 /* Wireframe */,
@@ -381,6 +399,8 @@
 				84EAD9141DAD29CE0034B9E2 /* HeaderTableViewCell.swift */,
 				84EAD9161DAD2C0A0034B9E2 /* ActivityTableViewCell.xib */,
 				84EAD9181DAD2C290034B9E2 /* ActivityTableViewCell.swift */,
+				84C77C7A1DAE784C00D0C3B3 /* TrackTableViewCell.xib */,
+				84C77C7C1DAE789200D0C3B3 /* TrackTableViewCell.swift */,
 			);
 			path = TableViewCell;
 			sourceTree = "<group>";
@@ -475,6 +495,7 @@
 				84EAD8C91DAD26F60034B9E2 /* Home.storyboard in Resources */,
 				84EAD8D81DAD27090034B9E2 /* Player.storyboard in Resources */,
 				84EAD9171DAD2C0A0034B9E2 /* ActivityTableViewCell.xib in Resources */,
+				84C77C7B1DAE784C00D0C3B3 /* TrackTableViewCell.xib in Resources */,
 				84EAD9071DAD272C0034B9E2 /* Login.storyboard in Resources */,
 				84EAD8A11DAD24F50034B9E2 /* LaunchScreen.storyboard in Resources */,
 				84EAD9101DAD27FB0034B9E2 /* logo.png in Resources */,
@@ -563,6 +584,7 @@
 				84EAD8F81DAD27200034B9E2 /* WelcomeWireframe.swift in Sources */,
 				84EAD8D91DAD27090034B9E2 /* PlayerViewController.swift in Sources */,
 				84EAD8CB1DAD26F60034B9E2 /* HomeWireframe.swift in Sources */,
+				84C77C821DAE7DE900D0C3B3 /* Track.swift in Sources */,
 				84EAD8CA1DAD26F60034B9E2 /* HomeViewController.swift in Sources */,
 				84EAD91C1DAD2D6F0034B9E2 /* RequestService.swift in Sources */,
 				84EAD8E51DAD27170034B9E2 /* TracksInteractor.swift in Sources */,
@@ -571,8 +593,10 @@
 				84EAD90B1DAD272C0034B9E2 /* LoginWireframeProtocol.swift in Sources */,
 				84EAD8DA1DAD27090034B9E2 /* PlayerWireframe.swift in Sources */,
 				84EAD8DB1DAD27090034B9E2 /* PlayerWireframeProtocol.swift in Sources */,
+				84C77C7D1DAE789200D0C3B3 /* TrackTableViewCell.swift in Sources */,
 				84EAD8F71DAD27200034B9E2 /* WelcomeViewController.swift in Sources */,
 				84EAD9061DAD272C0034B9E2 /* LoginInteractorProtocol.swift in Sources */,
+				84C77C801DAE7A7400D0C3B3 /* TrackService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
