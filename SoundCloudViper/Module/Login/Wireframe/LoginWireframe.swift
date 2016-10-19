@@ -16,7 +16,9 @@ extension LoginWireframe: LoginWireframeProtocol {
 
     func showHomeViewController() {
         let homeViewController = UIStoryboard.init(name: "Home", bundle: nil).instantiateViewController(withIdentifier: "HomeViewController") as! HomeViewController
-        homeViewController.interactor = HomeInteractor()
+        homeViewController.presenter = HomePresenter()
+        homeViewController.presenter?.interactor?.service = RequestService()
+        homeViewController.presenter?.interactor = HomeInteractor()
         homeViewController.navigation = HomeWireframe()
         homeViewController.navigation?.homeViewController = homeViewController
         let navConroller = UINavigationController(rootViewController: homeViewController)

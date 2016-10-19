@@ -25,10 +25,11 @@ extension WelcomeWireframe: WelcomeWireframeProtocol {
     
     func showLoginView() {
         let loginViewController = UIStoryboard.init(name: "Login", bundle: nil).instantiateViewController(withIdentifier: "LoginViewController") as! LoginViewController
-        loginViewController.interactor = LoginInteractor()
-        loginViewController.interactor.authenticator = SoundCloudAuthenticator(oauthState: (welcomeViewController?.oauthState)!)
-        loginViewController.interactor.navigation = LoginWireframe()
-        loginViewController.interactor.navigation?.welcomeViewController = welcomeViewController
+        loginViewController.presenter = LoginPresenter()
+        loginViewController.presenter.interactor = LoginInteractor()
+        loginViewController.presenter.interactor?.authenticator = SoundCloudAuthenticator(oauthState: (welcomeViewController?.oauthState)!)
+        loginViewController.presenter.interactor?.navigation = LoginWireframe()
+        loginViewController.presenter.interactor?.navigation?.welcomeViewController = welcomeViewController
         self.welcomeViewController?.present(loginViewController, animated: true, completion: nil)
     }
 }

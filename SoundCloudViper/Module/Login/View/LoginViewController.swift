@@ -9,18 +9,16 @@
 import UIKit
 
 class LoginViewController: UIViewController {
-
+    
     @IBOutlet var webViewForLogin: UIWebView!
     @IBOutlet var activityIndicator: UIActivityIndicatorView!
     
     var navigation:LoginWireframe!
-    var interactor:LoginInteractor!
+    var presenter:LoginPresenter!
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        activityIndicator.startAnimating()
-        webViewForLogin.sizeToFit()
-        self.interactor.startAuthorization(webView: webViewForLogin)
+        self.presenter.startAuthorization(webView: webViewForLogin, activityIndicator: activityIndicator)
     }
     
     override var prefersStatusBarHidden: Bool {
@@ -29,13 +27,14 @@ class LoginViewController: UIViewController {
 }
 
 extension LoginViewController: UIWebViewDelegate {
-
+    
     func webViewDidFinishLoad(_ webView: UIWebView) {
         activityIndicator.stopAnimating()
         activityIndicator.hidesWhenStopped = true
     }
     
     func webView(_ webView: UIWebView, shouldStartLoadWith request: URLRequest, navigationType: UIWebViewNavigationType) -> Bool {
-        return self.interactor.webView(webViewForLogin, shouldStartLoadWith: request, navigationType: navigationType, viewController: self)
+        return self.presenter.loadWebView(webView: webViewForLogin, request: request, navigationType: navigationType, viewController: self)
     }
 }
+

@@ -13,27 +13,31 @@ class TracksViewController: UIViewController {
     @IBOutlet var activityIndicator: UIActivityIndicatorView!
     @IBOutlet var tableView: UITableView!
     
-    var interactor:TracksInteractor?
-    var navigation:TracksWireframe?
+    //var interactor: TracksInteractor?
+    var presenter: TracksPresenter?
+    var navigation: TracksWireframe?
     var id = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.setupTableView(tableView: tableView)
         self.navigationController?.navigationBar.tintColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
-        self.interactor?.getTrackInfo(id: id,tableView: tableView)
+        self.presenter?.getTrackInfo(id: id, tableView: tableView)
+        //    self.interactor?.getTrackInfo(id: id,tableView: tableView)
     }
 }
 
 extension TracksViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "TrackCell") as! TrackTableViewCell
-        self.interactor?.setupCell(cell: cell, indexPath: indexPath as NSIndexPath)
+        self.presenter?.configurationCell(cell: cell, indexPath: indexPath as NSIndexPath)
+       // self.interactor?.setupCell(cell: cell, indexPath: indexPath as NSIndexPath)
         return cell
     }
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return (self.interactor?.service.arrayTracks.count)!
+        return (self.presenter?.numberOfRows())!
+        // return (self.interactor?.service.arrayTracks.count)!
     }
 }
 

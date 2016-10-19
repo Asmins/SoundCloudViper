@@ -9,40 +9,8 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "SoundCloudViper/Module/Home/Presenter/HomeViewController.swift"
-            timestampString = "497976364.714142"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "62"
-            endingLineNumber = "62"
-            landmarkName = "tableView(_:didSelectRowAt:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "SoundCloudViper/Module/Tracks/Presenter/TracksViewController.swift"
-            timestampString = "497976431.901799"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "20"
-            endingLineNumber = "20"
-            landmarkName = "viewDidLoad()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
             filePath = "SoundCloudViper/Module/Tracks/Service/TrackService.swift"
-            timestampString = "497976509.79281"
+            timestampString = "498556903.682579"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "17"
@@ -57,13 +25,13 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "SoundCloudViper/Module/Tracks/Service/TrackService.swift"
-            timestampString = "497976647.172978"
+            filePath = "SoundCloudViper/Module/Tracks/Interactor/TracksInteractor.swift"
+            timestampString = "498557112.468653"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "27"
-            endingLineNumber = "27"
-            landmarkName = "parsData(data:)"
+            startingLineNumber = "17"
+            endingLineNumber = "17"
+            landmarkName = "getTrackInfo(id:tableView:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

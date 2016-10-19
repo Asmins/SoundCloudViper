@@ -24,6 +24,9 @@ PODS:
   - libwebp/utils (0.5.1):
     - libwebp/core
   - libwebp/webp (0.5.1)
+  - RxCocoa (3.0.0-rc.1):
+    - RxSwift (~> 3.0.0-rc.1)
+  - RxSwift (3.0.0-rc.1)
   - SDWebImage/Core (3.8.2)
   - SDWebImage/WebP (3.8.2):
     - libwebp
@@ -32,12 +35,16 @@ PODS:
 
 DEPENDENCIES:
   - Alamofire (~> 4.0)
+  - RxCocoa (= 3.0.0-rc.1)
+  - RxSwift (= 3.0.0-rc.1)
   - SDWebImage/WebP
   - SwiftyJSON
 
 SPEC CHECKSUMS:
   Alamofire: 7682d43245de14874acd142ec137b144aa1dd335
   libwebp: b9126f8982a95370cf4eaad9bb3fefd57f052c15
+  RxCocoa: e72a074a7f38896ec0382d096df5f58df10115c7
+  RxSwift: d7a3819dd71789c473e3cbf1a0c02d58b2692739
   SDWebImage: 098e97e6176540799c27e804c96653ee0833d13c
   SwiftyJSON: f0be2e604f83e8405a624e9f891898bf6ed4e019
 

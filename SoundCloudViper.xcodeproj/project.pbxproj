@@ -7,6 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8407AAEC1DB75DF800481F88 /* TracksPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8407AAEB1DB75DF800481F88 /* TracksPresenter.swift */; };
+		8480EA3F1DB74CDF00FFF105 /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8480EA3E1DB74CDF00FFF105 /* LoginPresenter.swift */; };
+		8480EA411DB74D3C00FFF105 /* LoginPresenterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8480EA401DB74D3C00FFF105 /* LoginPresenterProtocol.swift */; };
+		8480EA451DB7516E00FFF105 /* Welcome.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8480EA431DB7516E00FFF105 /* Welcome.storyboard */; };
+		8480EA461DB7516E00FFF105 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8480EA441DB7516E00FFF105 /* WelcomeViewController.swift */; };
+		8480EA491DB7522100FFF105 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8480EA471DB7522100FFF105 /* Login.storyboard */; };
+		8480EA4A1DB7522100FFF105 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8480EA481DB7522100FFF105 /* LoginViewController.swift */; };
+		8480EA4D1DB752AC00FFF105 /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8480EA4C1DB752AC00FFF105 /* HomePresenter.swift */; };
+		8480EA4F1DB752C500FFF105 /* HomePresenterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8480EA4E1DB752C500FFF105 /* HomePresenterProtocol.swift */; };
+		8480EA521DB752F300FFF105 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8480EA501DB752F300FFF105 /* Home.storyboard */; };
+		8480EA531DB752F300FFF105 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8480EA511DB752F300FFF105 /* HomeViewController.swift */; };
+		8480EA581DB75BF000FFF105 /* TracksPresenterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8480EA571DB75BF000FFF105 /* TracksPresenterProtocol.swift */; };
+		8480EA5B1DB75C2A00FFF105 /* Tracks.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8480EA591DB75C2A00FFF105 /* Tracks.storyboard */; };
+		8480EA5C1DB75C2A00FFF105 /* TracksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8480EA5A1DB75C2A00FFF105 /* TracksViewController.swift */; };
 		84C77C591DAE2C8300D0C3B3 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C77C581DAE2C8300D0C3B3 /* User.swift */; };
 		84C77C5B1DAE39EF00D0C3B3 /* Activity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C77C5A1DAE39EE00D0C3B3 /* Activity.swift */; };
 		84C77C7B1DAE784C00D0C3B3 /* TrackTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84C77C7A1DAE784C00D0C3B3 /* TrackTableViewCell.xib */; };
@@ -18,8 +32,6 @@
 		84EAD8A11DAD24F50034B9E2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84EAD89F1DAD24F50034B9E2 /* LaunchScreen.storyboard */; };
 		84EAD8C71DAD26F60034B9E2 /* HomeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EAD8BF1DAD26F60034B9E2 /* HomeInteractor.swift */; };
 		84EAD8C81DAD26F60034B9E2 /* HomeInteractorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EAD8C01DAD26F60034B9E2 /* HomeInteractorProtocol.swift */; };
-		84EAD8C91DAD26F60034B9E2 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84EAD8C21DAD26F60034B9E2 /* Home.storyboard */; };
-		84EAD8CA1DAD26F60034B9E2 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EAD8C31DAD26F60034B9E2 /* HomeViewController.swift */; };
 		84EAD8CB1DAD26F60034B9E2 /* HomeWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EAD8C51DAD26F60034B9E2 /* HomeWireframe.swift */; };
 		84EAD8CC1DAD26F60034B9E2 /* HomeWireframeProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EAD8C61DAD26F60034B9E2 /* HomeWireframeProtocol.swift */; };
 		84EAD8D61DAD27090034B9E2 /* PlayerInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EAD8CE1DAD27090034B9E2 /* PlayerInteractor.swift */; };
@@ -30,20 +42,14 @@
 		84EAD8DB1DAD27090034B9E2 /* PlayerWireframeProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EAD8D51DAD27090034B9E2 /* PlayerWireframeProtocol.swift */; };
 		84EAD8E51DAD27170034B9E2 /* TracksInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EAD8DD1DAD27170034B9E2 /* TracksInteractor.swift */; };
 		84EAD8E61DAD27170034B9E2 /* TracksIntreractorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EAD8DE1DAD27170034B9E2 /* TracksIntreractorProtocol.swift */; };
-		84EAD8E71DAD27170034B9E2 /* Tracks.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84EAD8E01DAD27170034B9E2 /* Tracks.storyboard */; };
-		84EAD8E81DAD27170034B9E2 /* TracksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EAD8E11DAD27170034B9E2 /* TracksViewController.swift */; };
 		84EAD8E91DAD27170034B9E2 /* TracksWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EAD8E31DAD27170034B9E2 /* TracksWireframe.swift */; };
 		84EAD8EA1DAD27170034B9E2 /* TracksWireframeProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EAD8E41DAD27170034B9E2 /* TracksWireframeProtocol.swift */; };
 		84EAD8F41DAD27200034B9E2 /* WelcomeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EAD8EC1DAD27200034B9E2 /* WelcomeInteractor.swift */; };
 		84EAD8F51DAD27200034B9E2 /* WelcomeInteractorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EAD8ED1DAD27200034B9E2 /* WelcomeInteractorProtocol.swift */; };
-		84EAD8F61DAD27200034B9E2 /* Welcome.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84EAD8EF1DAD27200034B9E2 /* Welcome.storyboard */; };
-		84EAD8F71DAD27200034B9E2 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EAD8F01DAD27200034B9E2 /* WelcomeViewController.swift */; };
 		84EAD8F81DAD27200034B9E2 /* WelcomeWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EAD8F21DAD27200034B9E2 /* WelcomeWireframe.swift */; };
 		84EAD8F91DAD27200034B9E2 /* WelcomeWireframeProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EAD8F31DAD27200034B9E2 /* WelcomeWireframeProtocol.swift */; };
 		84EAD9051DAD272C0034B9E2 /* LoginInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EAD8FB1DAD272C0034B9E2 /* LoginInteractor.swift */; };
 		84EAD9061DAD272C0034B9E2 /* LoginInteractorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EAD8FC1DAD272C0034B9E2 /* LoginInteractorProtocol.swift */; };
-		84EAD9071DAD272C0034B9E2 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84EAD8FE1DAD272C0034B9E2 /* Login.storyboard */; };
-		84EAD9081DAD272C0034B9E2 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EAD8FF1DAD272C0034B9E2 /* LoginViewController.swift */; };
 		84EAD9091DAD272C0034B9E2 /* SoundCloudAuthenticator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EAD9011DAD272C0034B9E2 /* SoundCloudAuthenticator.swift */; };
 		84EAD90A1DAD272C0034B9E2 /* LoginWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EAD9031DAD272C0034B9E2 /* LoginWireframe.swift */; };
 		84EAD90B1DAD272C0034B9E2 /* LoginWireframeProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EAD9041DAD272C0034B9E2 /* LoginWireframeProtocol.swift */; };
@@ -58,6 +64,20 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8407AAEB1DB75DF800481F88 /* TracksPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TracksPresenter.swift; sourceTree = "<group>"; };
+		8480EA3E1DB74CDF00FFF105 /* LoginPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
+		8480EA401DB74D3C00FFF105 /* LoginPresenterProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginPresenterProtocol.swift; sourceTree = "<group>"; };
+		8480EA431DB7516E00FFF105 /* Welcome.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Welcome.storyboard; sourceTree = "<group>"; };
+		8480EA441DB7516E00FFF105 /* WelcomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+		8480EA471DB7522100FFF105 /* Login.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
+		8480EA481DB7522100FFF105 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		8480EA4C1DB752AC00FFF105 /* HomePresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomePresenter.swift; sourceTree = "<group>"; };
+		8480EA4E1DB752C500FFF105 /* HomePresenterProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomePresenterProtocol.swift; sourceTree = "<group>"; };
+		8480EA501DB752F300FFF105 /* Home.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
+		8480EA511DB752F300FFF105 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		8480EA571DB75BF000FFF105 /* TracksPresenterProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TracksPresenterProtocol.swift; sourceTree = "<group>"; };
+		8480EA591DB75C2A00FFF105 /* Tracks.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Tracks.storyboard; sourceTree = "<group>"; };
+		8480EA5A1DB75C2A00FFF105 /* TracksViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TracksViewController.swift; sourceTree = "<group>"; };
 		84C77C581DAE2C8300D0C3B3 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		84C77C5A1DAE39EE00D0C3B3 /* Activity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Activity.swift; sourceTree = "<group>"; };
 		84C77C7A1DAE784C00D0C3B3 /* TrackTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TrackTableViewCell.xib; sourceTree = "<group>"; };
@@ -71,8 +91,6 @@
 		84EAD8A21DAD24F50034B9E2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		84EAD8BF1DAD26F60034B9E2 /* HomeInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeInteractor.swift; sourceTree = "<group>"; };
 		84EAD8C01DAD26F60034B9E2 /* HomeInteractorProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeInteractorProtocol.swift; sourceTree = "<group>"; };
-		84EAD8C21DAD26F60034B9E2 /* Home.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
-		84EAD8C31DAD26F60034B9E2 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		84EAD8C51DAD26F60034B9E2 /* HomeWireframe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeWireframe.swift; sourceTree = "<group>"; };
 		84EAD8C61DAD26F60034B9E2 /* HomeWireframeProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeWireframeProtocol.swift; sourceTree = "<group>"; };
 		84EAD8CE1DAD27090034B9E2 /* PlayerInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerInteractor.swift; sourceTree = "<group>"; };
@@ -83,20 +101,14 @@
 		84EAD8D51DAD27090034B9E2 /* PlayerWireframeProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerWireframeProtocol.swift; sourceTree = "<group>"; };
 		84EAD8DD1DAD27170034B9E2 /* TracksInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TracksInteractor.swift; sourceTree = "<group>"; };
 		84EAD8DE1DAD27170034B9E2 /* TracksIntreractorProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TracksIntreractorProtocol.swift; sourceTree = "<group>"; };
-		84EAD8E01DAD27170034B9E2 /* Tracks.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Tracks.storyboard; sourceTree = "<group>"; };
-		84EAD8E11DAD27170034B9E2 /* TracksViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TracksViewController.swift; sourceTree = "<group>"; };
 		84EAD8E31DAD27170034B9E2 /* TracksWireframe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TracksWireframe.swift; sourceTree = "<group>"; };
 		84EAD8E41DAD27170034B9E2 /* TracksWireframeProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TracksWireframeProtocol.swift; sourceTree = "<group>"; };
 		84EAD8EC1DAD27200034B9E2 /* WelcomeInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeInteractor.swift; sourceTree = "<group>"; };
 		84EAD8ED1DAD27200034B9E2 /* WelcomeInteractorProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeInteractorProtocol.swift; sourceTree = "<group>"; };
-		84EAD8EF1DAD27200034B9E2 /* Welcome.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Welcome.storyboard; sourceTree = "<group>"; };
-		84EAD8F01DAD27200034B9E2 /* WelcomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		84EAD8F21DAD27200034B9E2 /* WelcomeWireframe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeWireframe.swift; sourceTree = "<group>"; };
 		84EAD8F31DAD27200034B9E2 /* WelcomeWireframeProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeWireframeProtocol.swift; sourceTree = "<group>"; };
 		84EAD8FB1DAD272C0034B9E2 /* LoginInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginInteractor.swift; sourceTree = "<group>"; };
 		84EAD8FC1DAD272C0034B9E2 /* LoginInteractorProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginInteractorProtocol.swift; sourceTree = "<group>"; };
-		84EAD8FE1DAD272C0034B9E2 /* Login.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
-		84EAD8FF1DAD272C0034B9E2 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		84EAD9011DAD272C0034B9E2 /* SoundCloudAuthenticator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SoundCloudAuthenticator.swift; sourceTree = "<group>"; };
 		84EAD9031DAD272C0034B9E2 /* LoginWireframe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginWireframe.swift; sourceTree = "<group>"; };
 		84EAD9041DAD272C0034B9E2 /* LoginWireframeProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginWireframeProtocol.swift; sourceTree = "<group>"; };
@@ -124,6 +136,42 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8480EA3D1DB74CC000FFF105 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8480EA471DB7522100FFF105 /* Login.storyboard */,
+				8480EA481DB7522100FFF105 /* LoginViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		8480EA421DB7511100FFF105 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8480EA431DB7516E00FFF105 /* Welcome.storyboard */,
+				8480EA441DB7516E00FFF105 /* WelcomeViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		8480EA4B1DB7529300FFF105 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8480EA501DB752F300FFF105 /* Home.storyboard */,
+				8480EA511DB752F300FFF105 /* HomeViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		8480EA541DB75BB600FFF105 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8480EA591DB75C2A00FFF105 /* Tracks.storyboard */,
+				8480EA5A1DB75C2A00FFF105 /* TracksViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		84C77C571DAE2C6D00D0C3B3 /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -191,6 +239,7 @@
 		84EAD8AA1DAD25A10034B9E2 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				8480EA4B1DB7529300FFF105 /* View */,
 				84EAD91A1DAD2D560034B9E2 /* Service */,
 				84EAD8BE1DAD26F60034B9E2 /* Interactor */,
 				84EAD8C11DAD26F60034B9E2 /* Presenter */,
@@ -212,6 +261,7 @@
 		84EAD8AC1DAD25A10034B9E2 /* Tracks */ = {
 			isa = PBXGroup;
 			children = (
+				8480EA541DB75BB600FFF105 /* View */,
 				84C77C7E1DAE7A5200D0C3B3 /* Service */,
 				84EAD8DC1DAD27170034B9E2 /* Interactor */,
 				84EAD8DF1DAD27170034B9E2 /* Presenter */,
@@ -223,6 +273,7 @@
 		84EAD8AD1DAD25A10034B9E2 /* Welcome */ = {
 			isa = PBXGroup;
 			children = (
+				8480EA421DB7511100FFF105 /* View */,
 				84EAD8EB1DAD27200034B9E2 /* Interactor */,
 				84EAD8EE1DAD27200034B9E2 /* Presenter */,
 				84EAD8F11DAD27200034B9E2 /* Wireframe */,
@@ -233,6 +284,7 @@
 		84EAD8AE1DAD25A10034B9E2 /* Login */ = {
 			isa = PBXGroup;
 			children = (
+				8480EA3D1DB74CC000FFF105 /* View */,
 				84EAD8FA1DAD272C0034B9E2 /* Interactor */,
 				84EAD8FD1DAD272C0034B9E2 /* Presenter */,
 				84EAD9001DAD272C0034B9E2 /* Services */,
@@ -253,8 +305,8 @@
 		84EAD8C11DAD26F60034B9E2 /* Presenter */ = {
 			isa = PBXGroup;
 			children = (
-				84EAD8C21DAD26F60034B9E2 /* Home.storyboard */,
-				84EAD8C31DAD26F60034B9E2 /* HomeViewController.swift */,
+				8480EA4C1DB752AC00FFF105 /* HomePresenter.swift */,
+				8480EA4E1DB752C500FFF105 /* HomePresenterProtocol.swift */,
 			);
 			path = Presenter;
 			sourceTree = "<group>";
@@ -307,8 +359,8 @@
 		84EAD8DF1DAD27170034B9E2 /* Presenter */ = {
 			isa = PBXGroup;
 			children = (
-				84EAD8E01DAD27170034B9E2 /* Tracks.storyboard */,
-				84EAD8E11DAD27170034B9E2 /* TracksViewController.swift */,
+				8480EA571DB75BF000FFF105 /* TracksPresenterProtocol.swift */,
+				8407AAEB1DB75DF800481F88 /* TracksPresenter.swift */,
 			);
 			path = Presenter;
 			sourceTree = "<group>";
@@ -334,8 +386,6 @@
 		84EAD8EE1DAD27200034B9E2 /* Presenter */ = {
 			isa = PBXGroup;
 			children = (
-				84EAD8EF1DAD27200034B9E2 /* Welcome.storyboard */,
-				84EAD8F01DAD27200034B9E2 /* WelcomeViewController.swift */,
 			);
 			path = Presenter;
 			sourceTree = "<group>";
@@ -361,8 +411,8 @@
 		84EAD8FD1DAD272C0034B9E2 /* Presenter */ = {
 			isa = PBXGroup;
 			children = (
-				84EAD8FE1DAD272C0034B9E2 /* Login.storyboard */,
-				84EAD8FF1DAD272C0034B9E2 /* LoginViewController.swift */,
+				8480EA3E1DB74CDF00FFF105 /* LoginPresenter.swift */,
+				8480EA401DB74D3C00FFF105 /* LoginPresenterProtocol.swift */,
 			);
 			path = Presenter;
 			sourceTree = "<group>";
@@ -492,17 +542,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				84EAD8C91DAD26F60034B9E2 /* Home.storyboard in Resources */,
+				8480EA5B1DB75C2A00FFF105 /* Tracks.storyboard in Resources */,
 				84EAD8D81DAD27090034B9E2 /* Player.storyboard in Resources */,
+				8480EA521DB752F300FFF105 /* Home.storyboard in Resources */,
 				84EAD9171DAD2C0A0034B9E2 /* ActivityTableViewCell.xib in Resources */,
 				84C77C7B1DAE784C00D0C3B3 /* TrackTableViewCell.xib in Resources */,
-				84EAD9071DAD272C0034B9E2 /* Login.storyboard in Resources */,
 				84EAD8A11DAD24F50034B9E2 /* LaunchScreen.storyboard in Resources */,
 				84EAD9101DAD27FB0034B9E2 /* logo.png in Resources */,
-				84EAD8E71DAD27170034B9E2 /* Tracks.storyboard in Resources */,
+				8480EA451DB7516E00FFF105 /* Welcome.storyboard in Resources */,
 				84EAD89E1DAD24F50034B9E2 /* Assets.xcassets in Resources */,
 				84EAD9131DAD29960034B9E2 /* HeaderTableView.xib in Resources */,
-				84EAD8F61DAD27200034B9E2 /* Welcome.storyboard in Resources */,
+				8480EA491DB7522100FFF105 /* Login.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -565,27 +615,30 @@
 				84EAD8F51DAD27200034B9E2 /* WelcomeInteractorProtocol.swift in Sources */,
 				84EAD9191DAD2C290034B9E2 /* ActivityTableViewCell.swift in Sources */,
 				84EAD8E91DAD27170034B9E2 /* TracksWireframe.swift in Sources */,
+				8480EA4A1DB7522100FFF105 /* LoginViewController.swift in Sources */,
 				84C77C591DAE2C8300D0C3B3 /* User.swift in Sources */,
+				8407AAEC1DB75DF800481F88 /* TracksPresenter.swift in Sources */,
 				84EAD8E61DAD27170034B9E2 /* TracksIntreractorProtocol.swift in Sources */,
 				84EAD8971DAD24F50034B9E2 /* AppDelegate.swift in Sources */,
 				84EAD8EA1DAD27170034B9E2 /* TracksWireframeProtocol.swift in Sources */,
+				8480EA4F1DB752C500FFF105 /* HomePresenterProtocol.swift in Sources */,
+				8480EA4D1DB752AC00FFF105 /* HomePresenter.swift in Sources */,
+				8480EA5C1DB75C2A00FFF105 /* TracksViewController.swift in Sources */,
+				8480EA581DB75BF000FFF105 /* TracksPresenterProtocol.swift in Sources */,
 				84EAD8F91DAD27200034B9E2 /* WelcomeWireframeProtocol.swift in Sources */,
 				84C77C5B1DAE39EF00D0C3B3 /* Activity.swift in Sources */,
 				84EAD8C81DAD26F60034B9E2 /* HomeInteractorProtocol.swift in Sources */,
 				84EAD9091DAD272C0034B9E2 /* SoundCloudAuthenticator.swift in Sources */,
-				84EAD8E81DAD27170034B9E2 /* TracksViewController.swift in Sources */,
 				84EAD8F41DAD27200034B9E2 /* WelcomeInteractor.swift in Sources */,
 				84EAD8D71DAD27090034B9E2 /* PlayerInteractorProtocol.swift in Sources */,
 				84EAD90A1DAD272C0034B9E2 /* LoginWireframe.swift in Sources */,
 				84EAD8C71DAD26F60034B9E2 /* HomeInteractor.swift in Sources */,
-				84EAD9081DAD272C0034B9E2 /* LoginViewController.swift in Sources */,
 				84EAD9051DAD272C0034B9E2 /* LoginInteractor.swift in Sources */,
 				84EAD90D1DAD27880034B9E2 /* RootWireframe.swift in Sources */,
 				84EAD8F81DAD27200034B9E2 /* WelcomeWireframe.swift in Sources */,
 				84EAD8D91DAD27090034B9E2 /* PlayerViewController.swift in Sources */,
 				84EAD8CB1DAD26F60034B9E2 /* HomeWireframe.swift in Sources */,
 				84C77C821DAE7DE900D0C3B3 /* Track.swift in Sources */,
-				84EAD8CA1DAD26F60034B9E2 /* HomeViewController.swift in Sources */,
 				84EAD91C1DAD2D6F0034B9E2 /* RequestService.swift in Sources */,
 				84EAD8E51DAD27170034B9E2 /* TracksInteractor.swift in Sources */,
 				84EAD9151DAD29CE0034B9E2 /* HeaderTableViewCell.swift in Sources */,
@@ -593,10 +646,13 @@
 				84EAD90B1DAD272C0034B9E2 /* LoginWireframeProtocol.swift in Sources */,
 				84EAD8DA1DAD27090034B9E2 /* PlayerWireframe.swift in Sources */,
 				84EAD8DB1DAD27090034B9E2 /* PlayerWireframeProtocol.swift in Sources */,
+				8480EA411DB74D3C00FFF105 /* LoginPresenterProtocol.swift in Sources */,
 				84C77C7D1DAE789200D0C3B3 /* TrackTableViewCell.swift in Sources */,
-				84EAD8F71DAD27200034B9E2 /* WelcomeViewController.swift in Sources */,
+				8480EA531DB752F300FFF105 /* HomeViewController.swift in Sources */,
+				8480EA3F1DB74CDF00FFF105 /* LoginPresenter.swift in Sources */,
 				84EAD9061DAD272C0034B9E2 /* LoginInteractorProtocol.swift in Sources */,
 				84C77C801DAE7A7400D0C3B3 /* TrackService.swift in Sources */,
+				8480EA461DB7516E00FFF105 /* WelcomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

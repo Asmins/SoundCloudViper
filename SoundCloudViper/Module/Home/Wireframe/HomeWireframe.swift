@@ -18,7 +18,8 @@ extension HomeWireframe: HomeWireframeProtocol {
        let controller = UIStoryboard.init(name: "Tracks", bundle: nil).instantiateViewController(withIdentifier: "TracksViewController") as! TracksViewController
         controller.title = title
         controller.id = id
-        controller.interactor = TracksInteractor()
+        controller.presenter = TracksPresenter()
+        controller.presenter?.interactor = TracksInteractor()
         homeViewController?.navigationController?.pushViewController(controller, animated: true)
     }
     
