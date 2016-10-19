@@ -85,17 +85,21 @@ strip_invalid_archs() {
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "Pods-SoundCloudViper/Alamofire.framework"
+  install_framework "Pods-SoundCloudViper/RxAlamofire.framework"
   install_framework "Pods-SoundCloudViper/RxCocoa.framework"
   install_framework "Pods-SoundCloudViper/RxSwift.framework"
   install_framework "Pods-SoundCloudViper/SDWebImage.framework"
   install_framework "Pods-SoundCloudViper/SwiftyJSON.framework"
+  install_framework "Pods-SoundCloudViper/Unbox.framework"
   install_framework "Pods-SoundCloudViper/libwebp.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "Pods-SoundCloudViper/Alamofire.framework"
+  install_framework "Pods-SoundCloudViper/RxAlamofire.framework"
   install_framework "Pods-SoundCloudViper/RxCocoa.framework"
   install_framework "Pods-SoundCloudViper/RxSwift.framework"
   install_framework "Pods-SoundCloudViper/SDWebImage.framework"
   install_framework "Pods-SoundCloudViper/SwiftyJSON.framework"
+  install_framework "Pods-SoundCloudViper/Unbox.framework"
   install_framework "Pods-SoundCloudViper/libwebp.framework"
 fi

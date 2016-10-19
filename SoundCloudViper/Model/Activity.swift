@@ -6,9 +6,10 @@
 //  Copyright © 2016 Mozi. All rights reserved.
 //
 
-import Foundation
+import UIKit
+import Unbox
 
-class Activity {
+struct Activity {
     var duration:String?
     var type:String?
     var userName:String?

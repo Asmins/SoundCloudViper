@@ -7,9 +7,11 @@
 //
 
 import UIKit
+import RxSwift
 
-protocol GetDataAboutUser {
-    func getData(tableView:UITableView,activityIndecator:UIActivityIndicatorView)
+protocol HomeInteractorProtocol {
+    func requesMe() -> Observable<User>
+    func getData(activityIndecator:UIActivityIndicatorView)
     func setupHeader(header:HeaderTableViewCell)
     func setupCell(cell:ActivityTableViewCell,indexPath:NSIndexPath)
 }

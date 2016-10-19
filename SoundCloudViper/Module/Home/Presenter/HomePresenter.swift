@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import RxSwift
 
 class HomePresenter {
     var arrayActivity:[Activity]?
@@ -28,8 +29,12 @@ extension HomePresenter: HomePresenterProtocol {
         self.interactor?.setupCell(cell: cell, indexPath: indexPath)
     }
     
-    func getData(tableView: UITableView, activityIndicator: UIActivityIndicatorView) {
-        self.interactor?.service.requestMe(tableView: tableView)
-        self.interactor?.service.getDataAboutActivity(tableView: tableView, activityIndicator: activityIndicator)
+    func reguestMe() -> Observable<User> {
+        return (self.interactor?.requesMe())!
+    }
+    
+    func getData(activityIndicator: UIActivityIndicatorView) {
+      //  self.interactor?.service.requestMe()
+        self.interactor?.service.getDataAboutActivity(activityIndicator: activityIndicator)
     }
 }

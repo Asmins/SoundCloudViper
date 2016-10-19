@@ -9,20 +9,36 @@
 import UIKit
 import Alamofire
 import SwiftyJSON
+import RxAlamofire
+import RxCocoa
+import RxSwift
+import Unbox
 
 class RequestService {
     
     var arrayActivity = [Activity]()
     var user = User()
     var token = UserDefaults()
+    let disposeBag = DisposeBag()
     
-    func requestMe(tableView: UITableView){
-        let url = "https://api.soundcloud.com/me.json?oauth_token=\(token.value(forKey: "token") as! String)"
-        Alamofire.request(url).responseJSON { response in
-            if response.data != nil {
-                self.parsData(data: response.data!)
+    func requestMe() -> Observable<User> {
+        let url = URL(string: "https://api.soundcloud.com/me.json?oauth_token=\(token.value(forKey: "token") as! String)")
+        /*
+         Alamofire.request(url).responseJSON { response in
+         if response.data != nil {
+         self.parsData(data: response.data!)
+         }
+         }*/
+        return json(.get, url!).map{ data in
+            print(url)
+            var user = User()
+            if let items = data as? [[String:AnyObject]] {
+                let json = JSON(items)
+                for items in 0..<json.count {
+                    print(json)
+                }
             }
-            tableView.reloadData()
+            return user
         }
     }
     
@@ -35,23 +51,22 @@ class RequestService {
         user.followingCount = json["followings_count"].int
     }
     
-    func getDataAboutActivity(tableView:UITableView,activityIndicator:UIActivityIndicatorView) {
-        let url = "https://api.soundcloud.com/me/activities?limit=100&oauth_token=\(token.value(forKey: "token") as! String)"
-        Alamofire.request(url).response { response in
+    func getDataAboutActivity(activityIndicator:UIActivityIndicatorView) {
+        let url = URL(string:"https://api.soundcloud.com/me/activities?limit=100&oauth_token=\(token.value(forKey: "token") as! String)")
+        Alamofire.request(url!).response { response in
             if response.data != nil {
                 self.parsDataActivity(data: response.data!, activityIndecator: activityIndicator)
             }
-            tableView.reloadData()
             activityIndicator.stopAnimating()
         }
     }
     
-    func parsDataActivity(data:Data,activityIndecator:UIActivityIndicatorView) -> [Activity] {
+    func parsDataActivity(data:Data,activityIndecator:UIActivityIndicatorView) -> [Activity]{
         activityIndecator.startAnimating()
         let json = JSON(data:data)
         let collection = json["collection"]
         for i in 0..<collection.count{
-            let activity = Activity()
+            var activity = Activity()
             activity.type = collection[i]["type"].stringValue
             let origin = collection[i]["origin"]
             if origin.isEmpty != true {

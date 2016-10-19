@@ -7,10 +7,12 @@
 //
 
 import UIKit
+import RxSwift
 
 protocol HomePresenterProtocol {
-    func getData(tableView:UITableView,activityIndicator:UIActivityIndicatorView)
+    func getData(activityIndicator:UIActivityIndicatorView)
     func configurationCell(cell:ActivityTableViewCell,indexPath:NSIndexPath)
     func numberOfRows() -> Int
     func setupHeader(header:HeaderTableViewCell)
+    func reguestMe() ->Observable<User>
 }

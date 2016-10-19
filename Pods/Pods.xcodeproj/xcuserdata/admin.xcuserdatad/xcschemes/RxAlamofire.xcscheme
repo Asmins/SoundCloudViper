@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '7F4B37E7F1FB092E5233B60A'
-               BlueprintName = 'libwebp'
+               BlueprintIdentifier = 'A0A74D78CF50975059778B83'
+               BlueprintName = 'RxAlamofire'
                ReferencedContainer = 'container:Pods.xcodeproj'
-               BuildableName = 'libwebp.framework'>
+               BuildableName = 'RxAlamofire.framework'>
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

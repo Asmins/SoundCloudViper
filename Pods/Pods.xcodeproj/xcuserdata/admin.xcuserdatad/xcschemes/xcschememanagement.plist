@@ -14,6 +14,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>RxAlamofire.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>RxCocoa.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -34,6 +39,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>Unbox.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>libwebp.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -42,7 +52,12 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>27086D277E80B4CD45EF9E778BE2DC30</key>
+		<key>126AF85091049E0641CEC9294A4763BB</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>27265A12D5F76FEF0461200BB97231F4</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -52,27 +67,32 @@
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>2FC312871183D6B6DB125C52C523580D</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>79C040AFDDCE1BCBF6D8B5EB0B85887F</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>7ED840D44571BB623CFB350AA20D429D</key>
+		<key>817BD7FF83F876D4228107F787513170</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>8C09773756A3FA0A29131F400892B859</key>
+		<key>AAACCB14C3805F59B842AA9B01A0046D</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>D2E7A012692C58B9D6D3B53C1B6BA779</key>
+		<key>CC04A4C3B34C4EDD893A8B51CA8B0668</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>F5E94A7F830E55BCF744A113E14CDF31</key>
+		<key>CD6E384B6123FB3C67C796651261E1AA</key>
 		<dict>
 			<key>primary</key>
 			<true/>

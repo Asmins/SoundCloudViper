@@ -24,6 +24,11 @@ PODS:
   - libwebp/utils (0.5.1):
     - libwebp/core
   - libwebp/webp (0.5.1)
+  - RxAlamofire (3.0.0-rc.1):
+    - RxAlamofire/Core (= 3.0.0-rc.1)
+  - RxAlamofire/Core (3.0.0-rc.1):
+    - Alamofire (~> 4.0)
+    - RxSwift (~> 3.0.0-rc.1)
   - RxCocoa (3.0.0-rc.1):
     - RxSwift (~> 3.0.0-rc.1)
   - RxSwift (3.0.0-rc.1)
@@ -32,20 +37,24 @@ PODS:
     - libwebp
     - SDWebImage/Core
   - SwiftyJSON (3.1.1)
+  - Unbox (2.1)
 
 DEPENDENCIES:
-  - Alamofire (~> 4.0)
+  - RxAlamofire (= 3.0.0-rc.1)
   - RxCocoa (= 3.0.0-rc.1)
   - RxSwift (= 3.0.0-rc.1)
   - SDWebImage/WebP
   - SwiftyJSON
+  - Unbox
 
 SPEC CHECKSUMS:
   Alamofire: 7682d43245de14874acd142ec137b144aa1dd335
   libwebp: b9126f8982a95370cf4eaad9bb3fefd57f052c15
+  RxAlamofire: 5e544296d77b754c4ad9cb419c29936e6bc9711d
   RxCocoa: e72a074a7f38896ec0382d096df5f58df10115c7
   RxSwift: d7a3819dd71789c473e3cbf1a0c02d58b2692739
   SDWebImage: 098e97e6176540799c27e804c96653ee0833d13c
   SwiftyJSON: f0be2e604f83e8405a624e9f891898bf6ed4e019
+  Unbox: 7070b89261391fbd1a9ccb5029079a884b897a62
 
 COCOAPODS: 0.39.0

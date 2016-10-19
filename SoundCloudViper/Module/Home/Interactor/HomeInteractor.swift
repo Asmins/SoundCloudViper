@@ -7,18 +7,22 @@
 //
 
 import UIKit
-import RxCocoa
 import RxSwift
+import RxCocoa
 
 class HomeInteractor {
     var service = RequestService()
 }
 
-extension HomeInteractor: GetDataAboutUser {
+extension HomeInteractor: HomeInteractorProtocol {
     
-    func getData(tableView:UITableView,activityIndecator:UIActivityIndicatorView){
-        service.requestMe(tableView: tableView)
-        service.getDataAboutActivity(tableView: tableView, activityIndicator: activityIndecator)
+    func getData(activityIndecator:UIActivityIndicatorView){
+       // service.requestMe()
+        service.getDataAboutActivity(activityIndicator: activityIndecator)
+    }
+    
+    func requesMe() -> Observable<User> {
+        return service.requestMe()
     }
     
     func setupHeader(header: HeaderTableViewCell) {

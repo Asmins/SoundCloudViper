@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = 'DF3D12C393831F7E3334F22D'
+               BlueprintIdentifier = 'C29703C202D3EAD920915C8C'
                BlueprintName = 'Pods-SoundCloudViper'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'Pods_SoundCloudViper.framework'>
