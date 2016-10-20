@@ -17,31 +17,37 @@ import Unbox
 class RequestService {
     
     var arrayActivity = [Activity]()
-    var user = User()
+   // var user = User
     var token = UserDefaults()
     let disposeBag = DisposeBag()
-    
-    func requestMe() -> Observable<User> {
-        let url = URL(string: "https://api.soundcloud.com/me.json?oauth_token=\(token.value(forKey: "token") as! String)")
-        /*
-         Alamofire.request(url).responseJSON { response in
-         if response.data != nil {
-         self.parsData(data: response.data!)
-         }
-         }*/
-        return json(.get, url!).map{ data in
-            print(url)
-            var user = User()
-            if let items = data as? [[String:AnyObject]] {
-                let json = JSON(items)
-                for items in 0..<json.count {
-                    print(json)
-                }
+    /*
+    func requestMe(token:String){
+        let url = URL(string: "https://api.soundcloud.com/me.json?oauth_token=\(token)")
+        
+        Alamofire.request(url!).responseJSON { response in
+            if response.data != nil {
+                self.parsData(data: response.data!)
             }
-            return user
+        }
+    }
+    */
+    
+    func requestMe(token:String) -> Observable<[User]> {
+        return json(.get, "https://api.soundcloud.com/me.json?oauth_token=\(token)").retry(3)
+            .map{ responseData in
+                let json = JSON(responseData)
+                let name = json["full_name"].stringValue
+                let nickName = json["username"].stringValue
+                let url = json["avatar_url"].stringValue
+                let followersCount = json["followers_count"].int
+                let followingCount = json["followings_count"].int
+                var user = [User]()
+                user.append(User(fullName: name, nickName: nickName, url: url, followersCount: followersCount!, followingCount: followingCount!))
+                return user
         }
     }
     
+    /*
     func parsData(data:Data)  {
         let json = JSON(data: data as Data)
         user.fullName = json["full_name"].stringValue
@@ -50,7 +56,7 @@ class RequestService {
         user.followersCount = json["followers_count"].int
         user.followingCount = json["followings_count"].int
     }
-    
+    */
     func getDataAboutActivity(activityIndicator:UIActivityIndicatorView) {
         let url = URL(string:"https://api.soundcloud.com/me/activities?limit=100&oauth_token=\(token.value(forKey: "token") as! String)")
         Alamofire.request(url!).response { response in

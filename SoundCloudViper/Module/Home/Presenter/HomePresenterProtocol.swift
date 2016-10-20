@@ -14,5 +14,5 @@ protocol HomePresenterProtocol {
     func configurationCell(cell:ActivityTableViewCell,indexPath:NSIndexPath)
     func numberOfRows() -> Int
     func setupHeader(header:HeaderTableViewCell)
-    func reguestMe() ->Observable<User>
+    func reguestMe()
 }

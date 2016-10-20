@@ -8,33 +8,37 @@
 
 import UIKit
 import RxSwift
+import RxCocoa
 
 class HomePresenter {
-    var arrayActivity:[Activity]?
+    var data: Driver<[User]>?
     var interactor:HomeInteractor?
 }
 
 extension HomePresenter: HomePresenterProtocol {
     
     func setupHeader(header: HeaderTableViewCell) {
-        self.interactor?.setupHeader(header: header)
+  //      self.interactor?.setupHeader(header: header)
     }
     
     func numberOfRows() -> Int {
-        arrayActivity = self.interactor?.service.arrayActivity
-        return (self.arrayActivity?.count)!
+       // arrayActivity = self.interactor?.service?.arrayActivity
+     //   return (self.arrayActivity?.count)!
+        print(self.interactor)
+        return 0
     }
     
     func configurationCell(cell: ActivityTableViewCell, indexPath: NSIndexPath) {
         self.interactor?.setupCell(cell: cell, indexPath: indexPath)
     }
     
-    func reguestMe() -> Observable<User> {
-        return (self.interactor?.requesMe())!
+    func reguestMe() {
+        self.interactor?.reguestMe()
+        data = interactor?.data
     }
     
     func getData(activityIndicator: UIActivityIndicatorView) {
       //  self.interactor?.service.requestMe()
-        self.interactor?.service.getDataAboutActivity(activityIndicator: activityIndicator)
+        self.interactor?.service?.getDataAboutActivity(activityIndicator: activityIndicator)
     }
 }

@@ -41,44 +41,44 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "SoundCloudViper/Module/Home/Service/RequestService.swift"
-            timestampString = "498581259.647664"
+            filePath = "SoundCloudViper/Module/Home/View/HomeViewController.swift"
+            timestampString = "498666110.30631"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "32"
-            endingLineNumber = "32"
-            landmarkName = "requestMe()"
+            startingLineNumber = "38"
+            endingLineNumber = "38"
+            landmarkName = "viewDidLoad()"
             landmarkType = "7">
             <Locations>
                <Location
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "SoundCloudViper.RequestService.requestMe () -&gt; RxSwift.Observable&lt;SoundCloudViper.User&gt;"
+                  symbolName = "SoundCloudViper.HomeViewController.viewDidLoad () -&gt; ()"
                   moduleName = "SoundCloudViper"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/admin/Desktop/SoundCloudViper/SoundCloudViper/Module/Home/Service/RequestService.swift"
-                  timestampString = "498581259.838894"
+                  urlString = "file:///Users/admin/Desktop/SoundCloudViper/SoundCloudViper/Module/Home/View/HomeViewController.swift"
+                  timestampString = "498666295.991939"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "32"
-                  endingLineNumber = "32"
-                  offsetFromSymbolStart = "766">
+                  startingLineNumber = "38"
+                  endingLineNumber = "38"
+                  offsetFromSymbolStart = "1656">
                </Location>
                <Location
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "SoundCloudViper.RequestService.(requestMe () -&gt; RxSwift.Observable&lt;SoundCloudViper.User&gt;).(closure #1)"
+                  symbolName = "SoundCloudViper.HomeViewController.(viewDidLoad () -&gt; ()).(closure #1)"
                   moduleName = "SoundCloudViper"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/admin/Desktop/SoundCloudViper/SoundCloudViper/Module/Home/Service/RequestService.swift"
-                  timestampString = "498581259.842884"
+                  urlString = "file:///Users/admin/Desktop/SoundCloudViper/SoundCloudViper/Module/Home/View/HomeViewController.swift"
+                  timestampString = "498666295.995483"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "33"
-                  endingLineNumber = "33"
-                  offsetFromSymbolStart = "33">
+                  startingLineNumber = "39"
+                  endingLineNumber = "39"
+                  offsetFromSymbolStart = "162">
                </Location>
             </Locations>
          </BreakpointContent>

@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SDWebImage
 
 class HeaderTableViewCell: UITableViewHeaderFooterView {
 
@@ -15,13 +16,21 @@ class HeaderTableViewCell: UITableViewHeaderFooterView {
     @IBOutlet var labelForUserNickName: UILabel!
     @IBOutlet var labelForUserName: UILabel!
     @IBOutlet var imageViewForUser: UIImageView!
+   
+    
     override func awakeFromNib() {
         super.awakeFromNib()
-       // imageViewForUser.layer.cornerRadius = imageViewForUser.frame.size.height / 2
         imageViewForUser.clipsToBounds = true
         imageViewForUser.layer.masksToBounds = true
         imageViewForUser.layoutIfNeeded()
-        // Initialization code
     }
 
+    func setupHeader(name:String,nickName:String,followersCount:Int,followingCount:Int,url:String){
+        self.labelForUserName.text = name
+        self.labelForUserNickName.text = nickName
+        self.countFollowersLabel.text = "\(followersCount)"
+        self.countFollowingLabel.text = "\(followingCount)"
+        let url = URL(string: url)
+        self.imageViewForUser.sd_setImage(with: url)
+    }
 }

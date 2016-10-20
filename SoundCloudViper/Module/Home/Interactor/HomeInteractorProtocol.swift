@@ -10,8 +10,8 @@ import UIKit
 import RxSwift
 
 protocol HomeInteractorProtocol {
-    func requesMe() -> Observable<User>
-    func getData(activityIndecator:UIActivityIndicatorView)
-    func setupHeader(header:HeaderTableViewCell)
+    func reguestMe()
+    func getData(tableView:UITableView,activityIndecator:UIActivityIndicatorView)
+  //  func setupHeader(header:HeaderTableViewCell)
     func setupCell(cell:ActivityTableViewCell,indexPath:NSIndexPath)
 }
