@@ -37,7 +37,7 @@ class HomeViewController: UIViewController {
         
         self.presenter?.data?.drive(tableVIew.rx_itemsWithCellFactory) {tableView,row,user in
             let header = tableView.dequeueReusableHeaderFooterView(withIdentifier: "Header") as! HeaderTableViewCell
-            header.setupHeader(name: user.fullName, nickName: user.fullName, followersCount: user.followersCount, followingCount: user.followingCount, url: user.url)
+            header.setupHeader(user: user)
             tableView.tableHeaderView = header
             tableView.sectionHeaderHeight = 60
             let cell = tableView.dequeueReusableCell(withIdentifier: "ActivityCell") as! ActivityTableViewCell

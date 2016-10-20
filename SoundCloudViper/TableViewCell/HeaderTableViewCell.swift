@@ -25,12 +25,12 @@ class HeaderTableViewCell: UITableViewHeaderFooterView {
         imageViewForUser.layoutIfNeeded()
     }
 
-    func setupHeader(name:String,nickName:String,followersCount:Int,followingCount:Int,url:String){
-        self.labelForUserName.text = name
-        self.labelForUserNickName.text = nickName
-        self.countFollowersLabel.text = "\(followersCount)"
-        self.countFollowingLabel.text = "\(followingCount)"
-        let url = URL(string: url)
+    func setupHeader(user:User){
+        self.labelForUserName.text = user.fullName
+        self.labelForUserNickName.text = user.nickName
+        self.countFollowersLabel.text = "\(user.followersCount)"
+        self.countFollowingLabel.text = "\(user.followingCount)"
+        let url = URL(string: user.url)
         self.imageViewForUser.sd_setImage(with: url)
     }
 }
