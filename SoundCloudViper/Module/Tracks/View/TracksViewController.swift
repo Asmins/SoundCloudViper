@@ -14,8 +14,7 @@ class TracksViewController: UIViewController {
 
     @IBOutlet var activityIndicator: UIActivityIndicatorView!
     @IBOutlet var tableView: UITableView!
-    
-    //var interactor: TracksInteractor?
+
     var presenter: TracksPresenter?
     var navigation: TracksWireframe?
     var id = 0
@@ -30,31 +29,8 @@ class TracksViewController: UIViewController {
             cell.configurationCell(track: track)
             return cell
         }
-        //   self.presenter?.getTrackInfo(id: id, tableView: tableView)
-        //    self.interactor?.getTrackInfo(id: id,tableView: tableView)
     }
 }
-/*
-extension TracksViewController: UITableViewDataSource {
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "TrackCell") as! TrackTableViewCell
-        self.presenter?.configurationCell(cell: cell, indexPath: indexPath as NSIndexPath)
-       // self.interactor?.setupCell(cell: cell, indexPath: indexPath as NSIndexPath)
-        return cell
-    }
-
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return (self.presenter?.numberOfRows())!
-        // return (self.interactor?.service.arrayTracks.count)!
-    }
-}
-
-extension TracksViewController: UITableViewDelegate {
-    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return CGFloat(80)
-    }
-}
-*/
 
 extension TracksViewController {
     func setupTableView(tableView:UITableView) {

@@ -10,7 +10,4 @@ import UIKit
 
 protocol TracksPresenterProtocol {
     func getTrackInfo(id:String)
-    //   func configurationCell(cell:TrackTableViewCell,indexPath:NSIndexPath)
- //   func getTrackInfo(id:Int,tableView:UITableView)
-//  func numberOfRows() -> Int
 }

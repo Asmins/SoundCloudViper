@@ -10,6 +10,4 @@ import UIKit
 
 protocol TracksInteractorProtocol {
     func getTrackInfo(id:String)
-    //  func getTrackInfo(id:Int,tableView:UITableView)
-  //  func setupCell(cell:TrackTableViewCell,indexPath:NSIndexPath)
 }
