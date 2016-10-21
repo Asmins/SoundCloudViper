@@ -7,14 +7,24 @@
 //
 
 import UIKit
+import RxCocoa
+import RxSwift
 
 class TracksPresenter {
-    var arrayTracks:[Track]!
+    var track:Driver<[Track]>?
+   // var arrayTracks:[Track]!
     var interactor:TracksInteractor?
 }
 
 extension TracksPresenter: TracksPresenterProtocol {
-    func configurationCell(cell: TrackTableViewCell, indexPath: NSIndexPath) {
+   
+    func getTrackInfo(id:String) {
+        self.interactor?.getTrackInfo(id: id)
+        track = interactor?.track
+    }
+    
+    /*
+ func configurationCell(cell: TrackTableViewCell, indexPath: NSIndexPath) {
         self.interactor?.setupCell(cell: cell, indexPath: indexPath)
     }
     
@@ -26,4 +36,5 @@ extension TracksPresenter: TracksPresenterProtocol {
         arrayTracks = self.interactor?.service.arrayTracks
         return (arrayTracks?.count)!
     }
+ */
 }

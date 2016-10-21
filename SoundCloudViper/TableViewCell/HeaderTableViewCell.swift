@@ -30,7 +30,7 @@ class HeaderTableViewCell: UITableViewHeaderFooterView {
         self.labelForUserNickName.text = user.nickName
         self.countFollowersLabel.text = "\(user.followersCount)"
         self.countFollowingLabel.text = "\(user.followingCount)"
-        let url = URL(string: user.url)
+        let url = URL(string: user.url!)
         self.imageViewForUser.sd_setImage(with: url)
     }
 }

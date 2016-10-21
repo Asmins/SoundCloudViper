@@ -9,7 +9,7 @@
 import UIKit
 import Unbox
 
-struct Activity {
+class Activity {
     var duration:String?
     var type:String?
     var userName:String?

@@ -33,5 +33,9 @@ class ActivityTableViewCell: UITableViewCell {
 
         // Configure the view for the selected state
     }
+    
+    func setupCell(activity:Activity) {
+        self.activityLabel.text = "\(activity.userName) posted new \(activity.type)"
+    }
 
 }

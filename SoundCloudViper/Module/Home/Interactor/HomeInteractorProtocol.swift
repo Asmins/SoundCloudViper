@@ -7,11 +7,9 @@
 //
 
 import UIKit
-import RxSwift
 
 protocol HomeInteractorProtocol {
-    func reguestMe()
     func getData(tableView:UITableView,activityIndecator:UIActivityIndicatorView)
-  //  func setupHeader(header:HeaderTableViewCell)
+    func setupHeader(header:HeaderTableViewCell)
     func setupCell(cell:ActivityTableViewCell,indexPath:NSIndexPath)
 }

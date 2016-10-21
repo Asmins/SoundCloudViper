@@ -25,4 +25,12 @@ class TrackTableViewCell: UITableViewCell {
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
     }
+    
+    func configurationCell(track:Track) {
+        self.titleLabel.text = track.title
+        self.subTitleLabel.text = track.subTitle
+        self.durationLabel.text = track.time
+        let url = URL(string: track.urlImage)
+        self.imageViewForPhotoAlbum.sd_setImage(with: url)
+    }
 }

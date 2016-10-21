@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import RxSwift
+import RxCocoa
 
 class TracksViewController: UIViewController {
 
@@ -22,11 +24,17 @@ class TracksViewController: UIViewController {
         super.viewDidLoad()
         self.setupTableView(tableView: tableView)
         self.navigationController?.navigationBar.tintColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
-        self.presenter?.getTrackInfo(id: id, tableView: tableView)
+        self.presenter?.getTrackInfo(id: "\(id)")
+        self.presenter?.track?.drive(tableView.rx.items) {(tableView,_,track) in
+            let cell = tableView.dequeueReusableCell(withIdentifier: "TrackCell") as! TrackTableViewCell
+            cell.configurationCell(track: track)
+            return cell
+        }
+        //   self.presenter?.getTrackInfo(id: id, tableView: tableView)
         //    self.interactor?.getTrackInfo(id: id,tableView: tableView)
     }
 }
-
+/*
 extension TracksViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "TrackCell") as! TrackTableViewCell
@@ -46,6 +54,7 @@ extension TracksViewController: UITableViewDelegate {
         return CGFloat(80)
     }
 }
+*/
 
 extension TracksViewController {
     func setupTableView(tableView:UITableView) {

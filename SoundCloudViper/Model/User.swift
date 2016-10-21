@@ -9,10 +9,10 @@
 import UIKit
 import SwiftyJSON
 
-struct User {
-    var fullName: String
-    var nickName: String
-    var url: String
-    var followersCount: Int
-    var followingCount: Int
+class User {
+    var fullName: String?
+    var nickName: String?
+    var url: String?
+    var followersCount: Int?
+    var followingCount: Int?
 }

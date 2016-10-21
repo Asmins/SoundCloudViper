@@ -8,12 +8,10 @@
 
 import Foundation
 
-class Track {
-    var idPlayList:Int!
-    var idTrack:Int!
-    var time:String!
-    var count:Int!
-    var title:String!
-    var subTitle:String!
-    var urlImage:String!
+struct Track {
+    var idTrack:Int
+    var time:String
+    var title:String
+    var subTitle:String
+    var urlImage:String
 }
